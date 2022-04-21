@@ -1,0 +1,17 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.contacts.speeddial" />
+  <feature name="coloros.customize.contacts.speed_dial_consumer_hotline" />
+  <feature name="oppo.mms.replace.google.mms"/>
+  <feature name="oppo.default.sms.application.google.messages"/>
+  <feature name="oppo.commcenter.mms.remove.oppo.mms"/>
+  <feature name="oppo.phone.hide.clir.number" />
+  <feature name="coloros.customize.contacts.show_sdn_more" />
+  <feature name="coloros.customize.omacp.remove_option_configuration_unsupport"/>
+    <feature name="oppo.launcher.overlay.google_assistant" />
+    <feature name="oppo.customize.hardware_software_version_show" />
+    <feature name="coloros.customize.settings.support.imsi" />
+    <feature name="coloros.customize.settings.support.sms_number" />
+    <feature name="coloros.customize.settings.support.ringtone_customize" />
+    <feature name="coloros.customize.settings.support.ringtone_change_by_sim" />
+</permissions>

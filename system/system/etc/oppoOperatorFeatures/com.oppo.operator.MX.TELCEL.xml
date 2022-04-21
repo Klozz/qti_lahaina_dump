@@ -1,0 +1,33 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.commcenter.phone.clear.voicemail.when.dial" />
+  <feature name="oppo.mms.replace.google.mms"/>
+  <feature name="oppo.default.sms.application.google.messages"/>
+  <feature name="oppo.stk.change.operator.stklable" />
+  <feature name="oppo.commcenter.lockassistant.restrict.auto.access.server" />
+  <feature name="oppo.commcenter.lockassistant.support.local.lock" />
+  <feature name="oppo.phone.play.busy.tone" />
+  <feature name="oppo.commcenter.phone.clear.code.mx.telcel" />
+  <feature name="oppo.contacts.show.sdn.service.number" />
+  <feature name="oppo.phone.display.volte.vowifi" />
+  <feature name="oppo.phone.hide.clir.number" />
+  <feature name="oppo.commcenter.mms.remove.oppo.mms"/>
+  <feature name="oppo.contacts.calllog.show.volte" />
+  <feature name="oppo.commcenter.phone.prefered.network.unavailable" />
+  <feature name="oppo.need.hide.sim.switch" />
+  <feature name="oppo.phone.direct.fdn.dialing" />
+  <feature name="oppo.write.calllog.volte" />
+  <feature name="oppo.write.calllog.vowifi" />
+  <feature name="oppo.commcenter.phone.modify.carrier.name.display" />
+  <feature name="oppo.phone.video.call.hold" />
+  <feature name="oppo.phone.force.remove.5g" />
+  <feature name="oppo.simsettings.show.wificall.in.controlcenter" />
+  <feature name="oppo.contacts.calllog.show.vowifi" />
+  <feature name="oppo.phone.display.vowifi.icon.active" />
+  <feature name="oppo.phone.hide.hd.icon" />
+    <feature name="oppo.customize.lowercase_o.volte"/>
+    <feature name="oppo.customize.dmtf_tone_default.off.dialing" />
+    <feature name="oppo.customize.function.time_show_12"/>
+    <feature name="oppo.customize.hardware_software_version_show" />
+    <feature name="oppo.oppo_disaplay_calculate_data_traffic.def.off" />
+</permissions>

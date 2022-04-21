@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ** Copyright (C), 2014-2019, Oplus Mobile Comm Corp., Ltd
+ ** All rights reserved.
+ **
+ ** File: - sys_game_shake_config.xml
+ ** Description:
+ **     This class is for the GameShake config update service.
+ **
+ ** <author>                   <date>       <version>      <desc>
+ ** bilig.ma@SYSTEM           2021/01/18        v1     add for OPLUS_FEATURE_GAMESHAKE.
+-->
+
+<configVersion
+    name="2020.05.9"
+    number="20200509">
+    <package
+        name="com.tencent.tmgp.pubgmhd"
+        parameter="kalman,0.7" />
+    <package
+        name="com.tencent.tmgp.sgame"
+        parameter="kalman,0.7" />
+    <package
+        name="com.tencent.ig"
+        parameter="kalman,0.7" />
+</configVersion>

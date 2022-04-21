@@ -1,0 +1,7 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.customize.hardware_software_version_show" />
+  <feature name="coloros.customize.settings.origin_kernel_version" />
+  <feature name="coloros.customize.settings.close_auto_time" />
+  <feature name="coloros.customize.settings.show_ims_registration_status" />
+</permissions>

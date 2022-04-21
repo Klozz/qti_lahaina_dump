@@ -1,0 +1,9 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.mms.max.size.600k" />
+  <feature name="oppo.contacts.show.sdn.service.number" />
+  <feature name="oppo.wirelesssetting.wifi.default.off" />
+  <feature name="oppo.cellbroadcast.emergency.alert.grey"/>
+  <feature name="oppo.phone.nodisplayrecord"/>
+  <feature name="oppo.phone.video.call.hold"/>
+</permissions>

@@ -1,0 +1,5 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.assistantscreen.contact.hide" />
+  <feature name="oppo.smartdrive.disable.smartdrive" />
+</permissions>

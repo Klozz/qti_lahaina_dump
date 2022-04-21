@@ -1,0 +1,28 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.commcenter.mms.remove.oppo.mms"/>
+  <feature name="oppo.mms.replace.google.mms"/>
+  <feature name="oppo.phone.show.softbank.call.settings" />
+  <feature name="oppo.cellbroadcast.max.volume" />
+  <feature name="coloros.customize.nfc.support_remote_lock" />
+  <feature name="coloros.customize.contacts.harass_intercept_anonymous_etc" />
+  <feature name="coloros.customize.cellbroadcast.show_cbs_fullscreen"/>
+  <feature name="oppo.phone.show.dialog.on.airplane"/>
+  <feature name="coloros.customize.phone.add_harass_intercept_type"/>
+  <feature name="oppo.commcenter.lockassistant.restrict.auto.access.server" />
+  <feature name="oppo.contacts.display.apn" />
+  <feature name="oppo.wirelesssettings.apn.invisible.apn.detail" />
+  <feature name="oppo.wirelesssettings.apn.ims.visible.from.dial" />
+  <feature name="oppo.wirelesssettings.apn.delete.disable" />
+  <feature name="coloros.customize.simsettings.reboot_for_simchange"/>
+  <feature name="coloros.customize.cellbroadcast.hide_etws_test_alerts" />
+  <feature name="oppo.phone.show.gsm.replace.2g" />
+  <feature name="oppo.phone.hide.conference.manage.button.after.srvcc" />
+  <feature name="coloros.customize.phone.end_call_out_of_service"/>
+  <feature name="coloros.customize.cellbroadcast.ym.channels.config"/>
+  <feature name="oppo.phone.roam.call.show.dialog" />
+  <feature name="coloros.customize.simsettings.disable_carrier_location_notification" />
+  <feature name="oppo.settings.mms.emergency.support" />
+  <feature name="coloros.customize.settings.gota.update.support" />
+  <feature name="oppo.oppo_disaplay_calculate_data_traffic.def.off" />
+</permissions>

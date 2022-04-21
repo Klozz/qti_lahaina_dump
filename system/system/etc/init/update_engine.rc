@@ -1,0 +1,14 @@
+service update_engine /system/bin/update_engine --logtostderr --logtofile --foreground
+    class late_start
+    user root
+    group root system wakelock inet cache media_rw everybody
+    writepid /dev/cpuset/system-background/tasks /dev/blkio/background/tasks
+    disabled
+
+on property:ro.boot.slot_suffix=*
+    enable update_engine
+
+# sam.li@SYSTEM,add for update engine log
+on property:sys.oplus.update_engine.log=1
+    copy_update_engine_log /data/misc/oplus_update_engine_log /mnt/vendor/opporeserve/update_engine_log
+    setprop sys.oplus.update_engine.log 0

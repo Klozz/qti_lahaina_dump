@@ -1,0 +1,5 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.keyguard.show.pinpukremains" />
+  <feature name="oppo.keyguard.show.operator.notice" />
+</permissions>

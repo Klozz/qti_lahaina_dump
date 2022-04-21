@@ -1,0 +1,6 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.wirelesssettings.apn.bearer.disable"/>
+  <feature name="oppo.phone.nodisplayrecord"/>
+  <feature name="oppo.phone.video.call.hold"/>
+</permissions>

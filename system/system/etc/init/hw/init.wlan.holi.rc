@@ -1,0 +1,18 @@
+# Copyright (C) 2012 The Android Open Source Project
+#
+# IMPORTANT: Do not create world writable files or directories.
+# This is a common source of Android security bugs.
+#
+
+import /system/etc/init/hw/init.rc
+import /system/system_ext/etc/init/init.wlan.ftm.rc
+
+on boot
+    class_start main
+
+#wenbin.liu@BSP.CHG.Basic, 2017/02/23 Add for send PCBA wlan mode
+service pcba_diag /my_engineering/bin/pcba_diag
+    class main
+    user root
+    group root system vendor_qti_diag diag radio
+    #oneshot

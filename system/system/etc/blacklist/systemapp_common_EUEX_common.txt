@@ -1,0 +1,7 @@
+com.oppo.usercenter
+com.heytap.usercenter
+com.heytap.themestore
+com.heytap.pictorial
+com.android.fmradio
+com.caf.fmradio
+com.coloros.musiclink

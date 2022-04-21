@@ -1,0 +1,38 @@
+service zygote /system/bin/app_process64 -Xzygote /system/bin --zygote --start-system-server --socket-name=zygote
+    class main
+    priority -20
+    user root
+    group root readproc reserved_disk
+    socket zygote stream 660 root system
+    socket usap_pool_primary stream 660 root system
+    onrestart exec_background - system system -- /system/bin/vdc volume abort_fuse
+    onrestart write /sys/power/state on
+    onrestart restart audioserver
+    onrestart restart cameraserver
+    onrestart restart media
+    onrestart restart netd
+    onrestart restart wificond
+    onrestart restart oppo_theias
+    task_profiles ProcessCapacityHigh MaxPerformance
+    #ifdef OPLUS_FEATURE_SENSOR
+    #tangjh@PSW.Bsp.Sensor ,2020/2/17 add for reboot adsp for BUG#2823787
+    onrestart restart vendor.sensors-hal-2-0-multihal
+    #endif
+#ifdef OPLUS_FEATURE_QUICKBOOT
+#Jianhua.Sun@ANDROID.BOOT.QUICKBOOT.1129994, 2016/06/06, Modify for quickboot
+    disabled
+#endif /* OPLUS_FEATURE_QUICKBOOT */
+
+service zygote_secondary /system/bin/app_process32 -Xzygote /system/bin --zygote --socket-name=zygote_secondary --enable-lazy-preload
+    class main
+    priority -20
+    user root
+    group root readproc reserved_disk
+    socket zygote_secondary stream 660 root system
+    socket usap_pool_secondary stream 660 root system
+    onrestart restart zygote
+    task_profiles ProcessCapacityHigh MaxPerformance
+#ifdef OPLUS_FEATURE_QUICKBOOT
+#Jianhua.Sun@ANDROID.BOOT.QUICKBOOT.1129994, 2016/06/06, Modify for quickboot
+    disabled
+#endif /* OPLUS_FEATURE_QUICKBOOT */

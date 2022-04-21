@@ -1,0 +1,33 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.opposimsettings.forbid.edit.sim.number" />
+  <feature name="oppo.phone.forbid.edit.voicemail.number" />
+  <feature name="oppo.phone.roam.call.show.dialog" />
+  <feature name="oppo.contacts.add.sound.in.vcard" />
+  <feature name="oppo.cellbroadcast.max.volume" />
+  <feature name="oppo.phone.show.gsm.replace.2g" />
+  <feature name="oppo.contacts.display.apn" />
+  <feature name="oppo.commcenter.lockassistant.restrict.auto.access.server" />
+  <feature name="oppo.phone.hide.conference.manage.button.after.srvcc" />
+  <feature name="oppo.phone.show.softbank.call.settings" />
+  <feature name="oppo.commcenter.mms.remove.oppo.mms"/>
+  <feature name="oppo.mms.replace.google.mms"/>
+  <feature name="oppo.phone.show.dialog.on.airplane"/>
+  <feature name="oppo.contacts.remove.backup" />
+  <feature name="coloros.customize.nfc.support_remote_lock" />
+  <feature name="coloros.customize.contacts.harass_intercept_anonymous_etc" />
+  <feature name="coloros.customize.phone.add_harass_intercept_type"/>
+  <feature name="oppo.cellbroadcast.softbank.special.channel.config"/>
+  <feature name="coloros.customize.simsettings.reboot_for_simchange"/>
+  <feature name="coloros.customize.cellbroadcast.show_cbs_fullscreen"/>
+  <feature name="coloros.customize.phone.end_call_out_of_service"/>
+  <feature name="coloros.customize.simsettings.disable_carrier_location_notification" />
+  <feature name="oppo.multiuser.entry.unsupport" />
+  <feature name="coloros.customize.guardelf.jp.softbank.keepalive" />
+  <feature name="coloros.customize.systemui.virtualkey_recent_right_of_home" />
+  <feature name="oppo.settings.mms.emergency.support" />
+  <feature name="oppo.customize.oppo_backup_restore.disable" />
+  <feature name="oppo.launcher.drawer_mode.default" />
+  <feature name="coloros.customize.settings.gota.update.support" />
+  <feature name="coloros.customize.settings.hide_video_beauty" />
+</permissions>

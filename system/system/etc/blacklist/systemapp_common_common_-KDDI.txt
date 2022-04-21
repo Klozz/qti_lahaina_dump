@@ -1,0 +1,4 @@
+com.kddi.android.cmail
+com.kddi.cs.app001
+jp.netstar.familysmile
+com.kddi.android.au_wifi_connect2

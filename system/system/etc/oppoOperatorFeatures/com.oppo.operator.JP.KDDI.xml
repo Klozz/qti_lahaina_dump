@@ -1,0 +1,22 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.commcenter.mms.remove.oppo.mms"/>
+  <feature name="oppo.mms.replace.google.mms"/>
+  <feature name="oppo.cellbroadcast.max.volume" />
+  <feature name="coloros.customize.cellbroadcast.show_emergency_alerts" />
+  <feature name="coloros.customize.cellbroadcast.jp_kddi_config"/>
+  <feature name="coloros.customize.incallui.show_hd_notification" />
+  <feature name="oppo.phone.play.busy.tone" />
+  <feature name="coloros.customize.phone.set_callforward_time" />
+  <feature name="coloros.customize.cellbroadcast.hide_etws_test_alerts"/>
+  <feature name="coloros.customize.simsettings.disable_carrier_location_notification" />
+  <feature name="coloros.customize.settings.gota.update.support" />
+  <feature name="coloros.customize.settings.sim_lock_support" />
+  <feature name="coloros.customize.settings.hide_video_beauty" />
+  <feature name="coloros.customize.operation.hide_user_solve" />
+  <feature name="coloros.customize.operation.hide_after_sale_service" />
+  <feature name="oppo.settings.hide.networkspeed" />
+  <feature name="coloros.customize.settings.signal_strength.hide" />
+  <feature name="coloros.customize.settings.devices_identify.hide" />
+  <feature name="coloros.customize.settings.ktv_loop_back.hide" />
+</permissions>

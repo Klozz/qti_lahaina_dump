@@ -1,0 +1,13 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+    <feature name="oppo.commcenter.mms.remove.oppo.mms"/>
+    <feature name="oppo.mms.replace.google.mms"/>
+    <feature name="oppo.default.sms.application.google.messages"/>
+    <feature name="oppo.phone.display.vowifi.icon.active"/>
+    <feature name="oppo.write.calllog.vowifi" />
+    <feature name="oppo.contacts.calllog.show.hd.icon" />
+    <feature name="oppo.contacts.wifi.calling.customize" />
+    <feature name="oppo.phone.calllog.display.hd" />
+    <feature name="oppo.phone.hide.callbarring" />
+    <feature name="oppo.phone.hide.intercept.call.notification" />
+</permissions>

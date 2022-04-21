@@ -1,0 +1,2 @@
+com.heytap.cloud
+com.coloros.cloud

@@ -1,0 +1,15 @@
+service midasd /system/bin/midasd
+	class hal
+	user system
+	group system readproc root
+	capabilities SYS_NICE
+	disabled
+
+on property:sys.boot_completed=1 && property:persist.sys.midasd.enable=0
+	stop midasd
+
+on property:sys.boot_completed=1 && property:persist.sys.midasd.enable=1
+	start midasd
+
+on property:sys.boot_completed=1 && property:persist.sys.midasd.enable=2
+	start midasd

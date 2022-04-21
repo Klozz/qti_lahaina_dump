@@ -1,0 +1,5 @@
+<!-- This file is used by Exp operator: ES.TELEFONIA.  DO NOT MODIFY. -->
+
+<permissions>
+  <feature name="oppo.null.ES.TELEFONIA" />
+</permissions>

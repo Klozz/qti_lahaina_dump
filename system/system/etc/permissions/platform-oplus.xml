@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ********************************************************************************
+ ** Copyright (C), 2019-2119, OPLUS Mobile Comm Corp., Ltd
+ ** COLOROS_EDIT, All rights reserved.
+ **
+ ** File: - platform-oplus.xml
+ ** Description:
+ **     Customization of Android platform.xml
+ **
+ ** Version: 1.0
+ ** Date: 2020-10-14
+ ** Author: xiaohu.mei@ANDROID.PERMISSION
+ **
+ ** <author>                        <data>       <version>   <desc>
+  ** xiaohu.mei@ANDROID.PERMISSION       2020-10-14   1.0         Create this file
+ ********************************************************************************/
+-->
+<!-- This file is used to define the mappings between lower-level system
+     user and group IDs and the higher-level permission names managed
+     by the platform.
+
+     Be VERY careful when editing this file!  Mistakes made here can open
+     big security holes.
+-->
+<permissions>
+</permissions>

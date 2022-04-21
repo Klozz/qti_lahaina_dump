@@ -1,0 +1,1 @@
+com.kddi.familysmile.mvno

@@ -1,0 +1,14 @@
+libvraudio_client.qti.so
+libqvrservice_client.qti.so
+libqvrcamera_client.qti.so
+libbinauralrenderer_wrapper.qti.so
+libhoaeffects.qti.so
+
+libAPSClient-jni.qti.so
+libAncHumBokeh-jni.qti.so
+libAncHumanVideo-jni.qti.so
+libAncHumanRetain-jni_v2.qti.so
+libjnistblur_api.qti.so
+libApsFaceBeautyPreviewJni.qti.so
+libAncHumanSegFigureFusion-jni.qti.so
+libjnistblur_api.qti.so

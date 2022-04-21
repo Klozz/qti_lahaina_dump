@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<filter-conf>
+    <version>20190301</version>
+    <isOpen>1</isOpen>
+    <filter-name>sys_sensor_config</filter-name>
+    <SensorAccess>
+        <App  name="com.tencent.mm" />
+        <App  name="com.alipay.mobile.healthcommon" />
+        <App  name="com.tencent.mobileqq" />
+        <App  name="com.sina.weibo.healthkit" />
+        <App  name="com.coloros.assistantscreen" />
+        <App  name="com.heytap.health" />
+        <App  name="com.coloros.healthservice" />
+        <App  name="com.alibaba.lightapp.runtime.plugin" />
+        <App  name="phonegesture" />
+        <App  name="com.oplus.gesture" />
+    </SensorAccess>
+</filter-conf>

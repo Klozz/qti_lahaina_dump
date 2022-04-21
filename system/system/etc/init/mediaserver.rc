@@ -1,0 +1,13 @@
+on property:init.svc.media=*
+    setprop init.svc.mediadrm ${init.svc.media}
+
+service media /system/bin/mediaserver
+    class main
+    user media
+    #ifdef OPLUS_FEATURE_ATLAS
+    #YaJun.Li@PSW.MM.AudioServer.Framework.2347439, 2019/10/01, add readproc permission for mediaserver
+    #group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm
+    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm readproc
+    #endif /* OPLUS_FEATURE_ATLAS */
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh HighPerformance
