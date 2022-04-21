@@ -1,0 +1,6 @@
+#line 1 "vendor/oplus/system/sepolicy/vendor/service_contexts"
+com.silead.fingerprintService u:object_r:silead_fp_service:s0
+#line 1 "system/sepolicy/reqd_mask/service_contexts"
+# empty service_contexts file - this file is used to generate an empty
+# non-platform service_context for devices without any service_contexts
+# customizations.

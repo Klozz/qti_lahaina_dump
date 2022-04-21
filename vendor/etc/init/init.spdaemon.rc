@@ -1,0 +1,20 @@
+#ifdef OPLUS_FEATURE_SECURITY_COMMON
+#Bin.Li@BSP.Kernel.Driver, 2019/11/04, Add for disable SPU.
+#on post-fs && property:ro.boot.product.vendor.sku=lahaina
+#    wait /mnt/vendor/spunvm
+#    wait /mnt/vendor/persist
+#    mkdir /mnt/vendor/persist/iar_db 0770 system system
+#    start vendor.spdaemon
+#    start vendor.sec_nvm
+#
+#service vendor.spdaemon /vendor/bin/spdaemon
+#    class core
+#    user system
+#    group system
+#    shutdown critical
+#
+#service vendor.sec_nvm /vendor/bin/sec_nvm
+#    class core
+#    user system
+#    group system
+#endif

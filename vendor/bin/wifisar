@@ -1,0 +1,129 @@
+#!/vendor/bin/sh
+
+SAR_EXEC_FILE="/vendor/bin/vendor_cmd_tool"
+SAR_CFG_FILE="/vendor/etc/wifi/sar-vendor-cmd.xml"
+
+WIFI_SAR_DISABLE_CMD_BODY="--ENABLE 5 --NUM_SPECS 0 --END_CMD"
+
+# temp static value, should get from sysfs based on STA/SAP on/off status
+# for android O, interface of SAP is softap0
+get_wifi_iface() {
+	echo "wlan0"
+}
+
+build_cmd_header() {
+	iface="$(get_wifi_iface)"
+	echo "-f $SAR_CFG_FILE -i $iface --START_CMD --SAR_SET"
+}
+
+build_cmd_body() {
+
+	[ "$#" -ne "2" ] && return
+
+	echo "--ENABLE 6 --NUM_SPECS 2 --SAR_SPEC 
+	--NESTED_AUTO --BAND 0 --POW $1 --END_ATTR 
+	--NESTED_AUTO --BAND 1 --POW $2 --END_ATTR 
+	--END_ATTR --END_CMD"
+}
+
+build_cmd() {
+	cHdr="$(build_cmd_header)"
+	cBody="$(build_cmd_body $1 $2)"
+
+	echo "$cHdr $cBody"
+}
+
+apply_sar() {
+	cmd="$(build_cmd $1 $2)"
+	echo "cmd=$cmd"
+
+	$SAR_EXEC_FILE $cmd
+}
+
+get_sar_pwr() {
+	idx="$1"
+	wifi2genable="$2"
+	wifi5gband="$3"
+	wifi5gkey="5G$wifi5gband"
+
+	if [ "$idx" -eq "0" ]; then
+		echo "80 80"
+		return
+	fi
+
+	prj_sar_cfg_file="/odm/etc/wifi/wifisar.cfg"
+	if [ ! -f "$prj_sar_cfg_file" ]; then
+		#echo "sar config file:$prj_sar_cfg_file not exist!"
+		echo "80 80"
+		return
+	fi
+
+	wifi2gstr=$(cat $prj_sar_cfg_file | awk -F ";" '{
+	if ($1 == "idx:""'$idx'") {
+		if ("'$wifi2genable'" == "0")
+			print "[2G4, 80]"
+		else
+			print $2
+	}}')
+
+	wifi5gstr=$(cat $prj_sar_cfg_file | awk -F ";" '{
+	if ($1 == "idx:""'$idx'") {
+		if ("'$wifi5gkey'" == "5G0")
+			print "[5G0, 80]"
+		else if ("'$wifi5gkey'" == "5G1")
+			print $3
+		else if ("'$wifi5gkey'" == "5G2")
+			print $4
+		else if ("'$wifi5gkey'" == "5G3")
+			print $5
+		else if ("'$wifi5gkey'" == "5G4")
+			print $6
+	}}')
+
+	pwr2g=$(echo $wifi2gstr | awk -F "[][,]" '{print $(NF-1)}')
+	pwr5g=$(echo $wifi5gstr | awk -F "[][,]" '{print $(NF-1)}')
+
+	pwr2g=$(echo $pwr2g | tr -d [:space:])
+	pwr5g=$(echo $pwr5g | tr -d [:space:])
+
+	[ -z "$pwr2g" ] && pwr2g="80"
+	[ -z "$pwr5g" ] && pwr5g="80"
+
+	echo "$pwr2g $pwr5g"
+}
+
+disable_wifi_sar() {
+	cmd_hdr="$(build_cmd_header)"
+	cmd_body="$WIFI_SAR_DISABLE_CMD_BODY"
+
+	cmd="$cmd_hdr $cmd_body"
+	echo "cmd=$cmd"
+
+	$SAR_EXEC_FILE $cmd
+}
+
+# Note:
+# 1. sarIdx:wifi 2.4G enable(0/1):wifi 5G band(0-4).
+sar_cmd=$(getprop "sys.oplus.wlan.sar_idx" "")
+
+# 1. get each parameter
+cmd_array=(${sar_cmd//:/ })
+array_len=${#cmd_array[@]}
+[ "$array_len" -ne "3" ] && echo "Invalid sar cmd!" && return
+
+sarIdx=${cmd_array[0]}
+wifi2g=${cmd_array[1]}
+wifi5g=${cmd_array[2]}
+
+# 2. get backoff power from sarIdx(note wifi5G B1/B2/B3/B4 have different power value)
+pwr=$(get_sar_pwr "$sarIdx" "$wifi2g" "$wifi5g")
+echo "pwr=$pwr"
+pwr_array=(${pwr// / })
+arr_len=${#pwr_array[@]}
+[ "$arr_len" -ne "2" ] && echo "Invalid power array" && disable_wifi_sar && return
+
+pwr2g=${pwr_array[0]}
+pwr5g=${pwr_array[1]}
+
+# 3. apply backoff power
+apply_sar "$pwr2g" "$pwr5g"
