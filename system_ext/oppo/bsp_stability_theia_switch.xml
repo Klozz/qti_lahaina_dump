@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<filter-conf>
+    <version>2020121401</version>
+    <isOpen>1</isOpen>
+    <filter-name>bsp_stability_theia_switch</filter-name>
+    <backKey>0</backKey>
+    <bootFailed>0</bootFailed>
+    <appNotResponding>0</appNotResponding>
+    <uiTimeout>1</uiTimeout>
+    <noFocusWindow>1</noFocusWindow>
+    <noFocusWindowToAnr enable="1">
+        <!-- NofocusAnr timeout, unit is ms -->
+        <NofocusAnrTimeout>12000</NofocusAnrTimeout>
+        <toAnrWhiteList>
+            <!-- whitelist, whole or part of package/activity name -->
+            <app name="keyguard" />
+            <app name="systemui" />
+            <app name="com.android.cts" />
+            <!-- <app name="com.oppotest.test1" /> -->
+        </toAnrWhiteList>
+    </noFocusWindowToAnr>
+</filter-conf>

@@ -1,0 +1,36 @@
+##########################################################
+# Copyright (C), 2008-2018, OPPO Mobile Comm Corp., Ltd
+# VENDOR_EDIT
+# File: init.oppo.se.rc
+#
+# Description:
+#	Definitions for theia service.
+#
+# Version: 1.0
+# Date created: 2019/11/25
+# Author: Gang.Yang@oppo.com
+#
+# --------------------------- Revision History: ------------------------------------
+# <version>		<date>		<author>		<desc>
+# Revision 1.0		2019/11/25	Gang.Yang@oppo.com	Created
+#######################################################
+
+#ifdef COLOROS_EDIT
+#Gang.Yang@oppo.com, 2019/11/08, Add for record theia events
+
+service oppo_theias /system/system_ext/bin/oppo_theia
+    class late_start
+    user system
+    group root system
+    socket theia_socket stream 666 system system
+# endif /* COLOROS_EDIT */
+
+on boot
+#ifdef VENDOR_EDIT
+#Fuchun.Liao@BSP.CHG.Basic 2019/09/30 modify for enable pmicwd
+    write /proc/pmicWd "1 254 7"
+#endif /* VENDOR_EDIT */
+#ifdef OPLUS_FEATURE_ACM
+#Yuwei.Guan@BSP.Kernel.FS,2020/07/08, Add for acm
+	chmod 0666 /dev/acm
+#endif /* OPLUS_FEATURE_ACM */

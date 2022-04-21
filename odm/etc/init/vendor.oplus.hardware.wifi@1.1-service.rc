@@ -1,0 +1,21 @@
+#ifdef OPLUS_FEATURE_WIFI_SNIFFER
+#LiangXiao@CONNECTIVITY.WIFI.BASE, 2020/03/24, Add for wifi sniffer service
+
+service oppo_wifi_service /odm/bin/hw/vendor.oplus.hardware.wifi@1.1-service
+    class hal
+    user root
+    group wifi system vendor_qti_diag net_admin
+    capabilities NET_ADMIN NET_RAW SYS_MODULE
+
+on property:vendor.oplus.sniffer.on=2
+    chmod 0770 /data/vendor/wifi/snifferlog.tar.gzip
+    chown root system /data/vendor/wifi/snifferlog.tar.gzip
+
+on property:vendor.oplus.sniffer.on=1
+    chmod 0777 /data/vendor/wifi
+    chown root system /data/vendor/wifi/sniffer_log/
+
+on property:vendor.oplus.sniffer.on=0
+    chmod 0770 /data/vendor/wifi
+
+#endif /* OPLUS_FEATURE_WIFI_SNIFFER */

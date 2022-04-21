@@ -1,0 +1,46 @@
+service set_logd_buffer_service /odm/bin/self-init set_logd_buffer
+    user root
+    oneshot
+    disabled
+
+on property:ro.oppo.logd.resize=1 && property:sys.boot_completed=1
+   start set_logd_buffer_service
+
+service prop-adap-core /odm/bin/self-init core
+    class core
+    user root
+    group root system radio
+    oneshot
+
+service prop-adap-main /odm/bin/self-init main
+    class main
+    user root
+    group root system radio
+    oneshot
+
+service prop-adap-core-gsi /odm/bin/self-init gsicore
+    class core
+    user root
+    group root system radio
+    oneshot
+
+service prop-adap-main-gsi /odm/bin/self-init gsimain
+    class main
+    user root
+    group root system radio
+    oneshot
+
+on property:ro.vendor.oppo.radio.multisim.config=*
+    setprop persist.radio.multisim.config ${ro.vendor.oppo.radio.multisim.config}
+on property:persist.vendor.oppo.region=*
+    setprop persist.sys.oppo.region ${persist.vendor.oppo.region}
+on property:persist.vendor.oplus.operator.opta=*
+    setprop persist.sys.oplus.operator.opta ${persist.vendor.oplus.operator.opta}
+on property:persist.vendor.oplus.operator.optb=*
+    setprop persist.sys.oplus.operator.optb ${persist.vendor.oplus.operator.optb}
+on property:ro.vendor.gsi.version_variant=*
+    setprop ro.vendor.gsi.build.flavor aosp_arm64-user
+    mount ext4 /dev/block/mapper/oppo_product  /mnt/vendor/oppo_product ro
+    mount ext4 /dev/block/mapper/version.${ro.vendor.gsi.version_variant}  /mnt/vendor/oppo_version ro
+    mount ext4 /dev/block/mapper/oppo_product  /data/vendor/euclid/product ro
+    mount ext4 /dev/block/mapper/version.${ro.vendor.gsi.version_variant}  /data/vendor/euclid/version ro

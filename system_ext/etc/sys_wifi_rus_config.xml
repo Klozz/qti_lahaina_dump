@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wifiRusEntityConfig>
+    <!-- kona -->
+    <!-- WIFI FW: wifi.fw -->
+    <Entity platform="kona" type="wifi.fw" versionFileName="wlandsp.mbn" fileNameList="wlandsp.mbn"/>
+    <!-- WIFI FW: wifi.bdf -->
+    <Entity platform="kona" type="wifi.bdf" versionFileName="bin_version" fileNameList="bin_version;bdwlan.bin"/>
+</wifiRusEntityConfig>

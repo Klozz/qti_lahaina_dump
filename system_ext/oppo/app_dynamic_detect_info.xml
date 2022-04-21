@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<packages>
+<package name="com.ludashi.benchmark" versionName="10.2.0">
+<activity name="ui.activity.MainTabActivity" />
+<component>
+<item name="TextView">17</item>
+<item name="ImageButton">2</item>
+<item name="TabWidget">1</item>
+<item name="RelativeLayout">7</item>
+<item name="RecyclerView">1</item>
+<item name="View">4</item>
+<item name="Space">1</item>
+<item name="TabHost">1</item>
+<item name="ImageView">20</item>
+<item name="LinearLayout">9</item>
+<item name="ViewStub">2</item>
+<item name="FrameLayout">4</item>
+<item name="ConstraintLayout">8</item>
+</component>
+<id>
+<item name="app:id/ib_permission_warn">1</item>
+<item name="app:id/main_float_img_tips">1</item>
+<item name="app:id/tabwidget_textview">5</item>
+<item name="android:id/tabhost">1</item>
+<item name="app:id/monitor_list">1</item>
+<item name="app:id/tabwidget_imageview">5</item>
+<item name="app:id/main_float_close">1</item>
+<item name="app:id/cl_clean_full">1</item>
+<item name="app:id/cl_cooling">1</item>
+<item name="app:id/tv_cooling">1</item>
+<item name="app:id/iv_push">1</item>
+<item name="app:id/tv_speed">1</item>
+<item name="app:id/cl_speed">1</item>
+<item name="app:id/iv_qq_img">1</item>
+<item name="app:id/tv_clean_fast_trash">1</item>
+<item name="android:id/action_mode_bar_stub">2</item>
+<item name="app:id/tabwidget_item_layout">5</item>
+<item name="android:id/tabcontent">1</item>
+<item name="app:id/tv_push">1</item>
+<item name="app:id/tabwidget_dot">5</item>
+<item name="app:id/look_more">1</item>
+<item name="app:id/view">1</item>
+<item name="app:id/tv_make_money_rules">1</item>
+<item name="app:id/tv_clean_fast_trash_click">1</item>
+<item name="android:id/statusBarBackground">1</item>
+<item name="app:id/cl_qq">1</item>
+<item name="app:id/cl_wx">1</item>
+<item name="app:id/iv_wx">1</item>
+<item name="app:id/space">1</item>
+<item name="app:id/title">1</item>
+<item name="app:id/tv_wx">1</item>
+<item name="app:id/ib_ad_icon">1</item>
+<item name="android:id/content">2</item>
+<item name="app:id/iv_clean_full_img">1</item>
+<item name="app:id/iv_clean_full_txt">1</item>
+<item name="app:id/iv_cooling">1</item>
+<item name="app:id/main_float_content">1</item>
+<item name="android:id/tabs">1</item>
+<item name="app:id/tv_qq_txt">1</item>
+<item name="app:id/iv_inner">1</item>
+<item name="app:id/iv_outer">1</item>
+<item name="app:id/iv_speed">1</item>
+<item name="app:id/view_bg">1</item>
+<item name="app:id/tv_scan_status_txt">1</item>
+<item name="app:id/view_navibar_bg">1</item>
+<item name="app:id/cl_push">1</item>
+</id>
+</package>
+<package name="com.antutu.ABenchMark" versionName="8.3.0">
+<activity name="com.antutu.benchmark.ui.home.activity.ActivityMain" />
+<component>
+<item name="ViewStubCompat">1</item>
+<item name="ActionMenuView">1</item>
+<item name="ActionMenuItemView">1</item>
+<item name="ImageViewAspectRatio">1</item>
+<item name="PromptView">1</item>
+<item name="TabLayout">1</item>
+<item name="TabLayout$g">1</item>
+<item name="TabLayout$l">4</item>
+<item name="RelativeLayout">7</item>
+<item name="RecyclerView">2</item>
+<item name="o">31</item>
+<item name="y">64</item>
+<item name="View">10</item>
+<item name="FitWindowsFrameLayout">1</item>
+<item name="Toolbar">1</item>
+<item name="LinearLayout">10</item>
+<item name="ViewStub">1</item>
+<item name="FrameLayout">6</item>
+<item name="LinearLayoutAspectRatio">1</item>
+<item name="ContentFrameLayout">1</item>
+<item name="ScrollView">1</item>
+<item name="ConstraintLayout">28</item>
+</component>
+<id>
+<item name="app:id/homeCpuLoadCurrent">1</item>
+<item name="app:id/homeMoreFeatureDividing">6</item>
+<item name="app:id/main_tab_content">1</item>
+<item name="app:id/homeNOPublicImg">1</item>
+<item name="app:id/homeNOPublicSearch">1</item>
+<item name="app:id/constraintLayout">6</item>
+<item name="app:id/main_test_finish_score">1</item>
+<item name="app:id/main_tab">1</item>
+<item name="app:id/action_bar_root">1</item>
+<item name="app:id/main_test_finish_bg">1</item>
+<item name="app:id/homeMoreFeatureDesc">6</item>
+<item name="app:id/homeMoreFeatureIcon">6</item>
+<item name="app:id/homeBatteryTemp">1</item>
+<item name="app:id/home3DContent">1</item>
+<item name="app:id/homeMoreFeatures">1</item>
+<item name="app:id/homeMainFeatureTitle">7</item>
+<item name="app:id/homeNOPublic">1</item>
+<item name="app:id/toolbar">1</item>
+<item name="android:id/action_mode_bar_stub">1</item>
+<item name="app:id/homeBatteryTempDesc">1</item>
+<item name="app:id/homeNOPublicCopy">1</item>
+<item name="app:id/homeNOPublicDesc">1</item>
+<item name="app:id/homeScrollView">1</item>
+<item name="app:id/homeDevice">1</item>
+<item name="app:id/homeCpuLoadDesc">1</item>
+<item name="app:id/homeQRDesc">1</item>
+<item name="app:id/homePrompt">1</item>
+<item name="app:id/homePublic">1</item>
+<item name="app:id/main_tab_point">4</item>
+<item name="android:id/statusBarBackground">1</item>
+<item name="app:id/homeMainFeatureDescOne">7</item>
+<item name="app:id/homeMainFeatureDescSub">7</item>
+<item name="app:id/ll_bg">1</item>
+<item name="app:id/main_tab_divide">1</item>
+<item name="app:id/homeDeviceName">1</item>
+<item name="android:id/content">1</item>
+<item name="app:id/main_test_finish_retest">1</item>
+<item name="app:id/tv_prompt">1</item>
+<item name="app:id/action_main_settings">1</item>
+<item name="app:id/iv_close">1</item>
+<item name="app:id/homeBatteryCurrentTemp">1</item>
+<item name="app:id/homeMoreFeatureArrow">6</item>
+<item name="app:id/homeMoreFeatureTitle">6</item>
+<item name="app:id/homeMainFeatures">1</item>
+<item name="app:id/main_test_finish_show">1</item>
+<item name="app:id/homeMainFeatureDesc">7</item>
+<item name="app:id/homeMainFeatureIcon">7</item>
+<item name="app:id/main_tab_text">4</item>
+<item name="app:id/action_mode_bar_stub">1</item>
+</id>
+</package>
+<package name="com.ludashi.benchmark2" versionName="1.2">
+<activity name="BenchmarkActivity" />
+<component>
+<item name="ViewStubCompat">1</item>
+<item name="FitWindowsLinearLayout">1</item>
+<item name="SomePartTransparentView">1</item>
+<item name="BenchView">1</item>
+<item name="AppCompatImageView">1</item>
+<item name="ProgressBar">1</item>
+<item name="TextView">1</item>
+<item name="ImageButton">3</item>
+<item name="NaviBar">1</item>
+<item name="AppCompatTextView">5</item>
+<item name="View">4</item>
+<item name="AppCompatButton">1</item>
+<item name="LinearLayout">6</item>
+<item name="ViewStub">1</item>
+<item name="FrameLayout">2</item>
+<item name="ContentFrameLayout">1</item>
+<item name="Button">2</item>
+</component>
+<id>
+<item name="app:id/benchmark_deviceName">1</item>
+<item name="app:id/benchmark_progressRatio">1</item>
+<item name="app:id/action_bar_root">1</item>
+<item name="app:id/benchmark_back">1</item>
+<item name="app:id/terminate_btn">1</item>
+<item name="app:id/benchmark_progress">1</item>
+<item name="app:id/benchmark_benchView">1</item>
+<item name="android:id/action_mode_bar_stub">1</item>
+<item name="app:id/animation_view">1</item>
+<item name="app:id/operation_area">1</item>
+<item name="app:id/process_tip">1</item>
+<item name="android:id/statusBarBackground">1</item>
+<item name="android:id/content">1</item>
+<item name="app:id/benchmark_totalScore">1</item>
+<item name="app:id/process_sub_tip">1</item>
+<item name="app:id/action_mode_bar_stub">1</item>
+</id>
+</package>
+</packages>

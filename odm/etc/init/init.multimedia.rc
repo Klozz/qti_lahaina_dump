@@ -1,0 +1,20 @@
+on property:ro.oplus.image.my_engineering.type=cta
+   setprop ro.odm.audio.subtype CTA
+
+on property:ro.oplus.image.my_engineering.type=allnetcmccfield
+   setprop ro.odm.audio.subtype MOS
+
+on property:ro.oplus.image.my_engineering.type=allnetcufield
+   setprop ro.odm.audio.subtype MOS
+
+on property:ro.oplus.image.my_engineering.type=allnetctfield
+   setprop ro.odm.audio.subtype MOS
+
+on property:ro.vendor.oplus.operator=VODAFONE_EEA
+   setprop ro.odm.audio.subtype VDF
+
+on property:ro.vendor.oplus.operator=VODAFONE_NONEEA
+   setprop ro.odm.audio.subtype VDF
+
+on property:ro.vendor.oplus.operator=ORANGE
+   setprop ro.odm.audio.subtype ORANGE

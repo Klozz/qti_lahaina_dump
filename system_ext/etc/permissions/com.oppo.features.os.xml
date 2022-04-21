@@ -1,0 +1,9 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<permissions>
+    <!-- Yalong.Wang@Apps.SpeechAssist 2019/12/09, feature used for disable incoming call voice control -->
+    <feature name="oppo.incomingcall.voicecontrol.shield" />
+    <!-- FuYao@ANDROID.MULTIUSER 20200408, add for multi app-->
+    <feature name="oppo.multiapp.support" />
+    <!-- Wurun.Zhou@ANDROID.WALLPAPER, add for support live wallpaper-->
+    <feature name="android.software.live_wallpaper" />
+</permissions>

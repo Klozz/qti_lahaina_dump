@@ -1,0 +1,12 @@
+#ifdef OPLUS_FEATURE_DATAFREE
+#Yaohong.Guo@ANDROID.PMS, 2020/05/08, add for datafree
+service datafree /system/system_ext/bin/datafree
+    class main
+    oneshot
+
+on property:oppo.service.datafree.enable=1
+    start datafree
+
+on property:oppo.service.datafree.enable=0
+    stop datafree
+#endif /* OPLUS_FEATURE_DATAFREE */

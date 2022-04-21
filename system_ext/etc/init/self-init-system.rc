@@ -1,0 +1,43 @@
+#ifdef OPLUS_FEATURE_PREINSTALL
+#Qiang.Shao@AD.BUILD, 2020/11/06, Add for thirdpart apps preinstall
+service media-resource-travel-fbe /system_ext/bin/self-init-system travel_media_resource_fbe
+    user root
+    group root system radio media_rw
+    oneshot
+    disabled
+
+service media-resource-travel-preload /system_ext/bin/self-init-system travel_media_resource_preload
+    user root
+    group root system radio media_rw
+    oneshot
+    disabled
+
+on property:vold.fbe.decrypted=1
+    mkdir /data/etc 0771 system system encryption=None
+    mkdir /data/etc/appchannel 0775 system system
+    start media-resource-travel-fbe
+    start media-resource-travel-preload
+#endif /* OPLUS_FEATURE_PREINSTALL */
+
+
+#ifdef COLOROS_EDIT
+#Wuchao.Huang@Rom.Framework, 2020/02/20, Modify for EAP mult-user adaption
+on post-fs-data
+   mkdir /data/oppo/coloros/eap 0777 system system
+   mkdir /data/oppo/coloros/eap_moa 0777 system system
+   mkdir /data/oppo/coloros/eap_moa/crash 0777 system system
+   mkdir /data/oppo/coloros/eap_moa/anr 0777 system system
+   mkdir /data/oppo/log/DCS/en/eap 0777 system system
+   mkdir /data/oppo/log/DCS/en/eap_moa 0777 system system
+   mkdir /data/oppo/log/DCS/en/eap_moa/crash 0777 system system
+   mkdir /data/oppo/log/DCS/en/eap_moa/anr 0777 system system
+   chmod 0777 /data/oppo/coloros/eap
+   chmod 0777 /data/oppo/coloros/eap_moa
+   chmod 0777 /data/oppo/coloros/eap_moa/crash
+   chmod 0777 /data/oppo/coloros/eap_moa/anr
+   chmod 0777 /data/oppo/log/DCS/en/eap
+   chmod 0777 /data/oppo/log/DCS/en/eap_moa
+   chmod 0777 /data/oppo/log/DCS/en/eap_moa/crash
+   chmod 0777 /data/oppo/log/DCS/en/eap_moa/anr
+#endif /* COLOROS_EDIT */
+

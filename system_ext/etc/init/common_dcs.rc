@@ -1,0 +1,4 @@
+service common_dcs /system_ext/bin/common_dcs
+   class core
+   user system
+   group system

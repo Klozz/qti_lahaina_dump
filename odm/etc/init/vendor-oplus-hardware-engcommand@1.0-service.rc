@@ -1,0 +1,7 @@
+service oplus.engcommand-1-0 /odm/bin/hw/vendor-oplus-hardware-engcommand@1.0-service
+    class main
+    user root
+    group root
+    interface vendor.oplus.hardware.engcommand@1.0::IEngCommand default
+    oneshot
+    disabled

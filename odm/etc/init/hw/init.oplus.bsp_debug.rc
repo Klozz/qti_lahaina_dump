@@ -1,0 +1,79 @@
+##################################################################################
+### Oplus All rights reserved.
+###
+### File: - init.oplus.bsp_debug.rc
+### Author: wen.luo@BSP.Kernel.Stability
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+### ------------------------------------------------------------------------------
+### 2019-11-10     wen.luo            Create this file    1.0        bsp debug/tracing
+##################################################################################
+
+#for agingtest ftrace
+on property:persist.sys.agingtest=1
+    write /dev/kmsg "Ftrace Debug:init.oplus.bsp_debug.rc"
+    # timer
+    chmod 0755 /sys/kernel/tracing
+    write /sys/kernel/tracing/tracing_on  0
+    write /sys/kernel/tracing/events/enable 0
+    write /sys/kernel/tracing/buffer_size_kb 64000
+    write /sys/kernel/tracing/set_event ""
+    write /sys/kernel/tracing/trace ""
+
+    # REM enble FTRACE for softirq events
+    write /sys/kernel/tracing/events/irq/enable 1
+    write /sys/kernel/tracing/events/irq/filter 1
+    write /sys/kernel/tracing/events/irq/softirq_entry/enable 1
+    write /sys/kernel/tracing/events/irq/softirq_exit/enable 1
+    write /sys/kernel/tracing/events/irq/softirq_raise/enable 1
+    
+    # REM schedular
+    write /sys/kernel/tracing/events/sched/enable 1
+    write /sys/kernel/tracing/events/sched/filter 1
+    write /sys/kernel/tracing/events/sched/sched_cpu_util/enable 1
+    write /sys/kernel/tracing/events/sched/sched_enq_deq_task/enable 1
+    write /sys/kernel/tracing/events/sched/sched_kthread_stop_ret/enable 1
+    write /sys/kernel/tracing/events/sched/sched_kthread_stop/enable 1
+    write /sys/kernel/tracing/events/sched/sched_load_balance/enable 1
+    write /sys/kernel/tracing/events/sched/sched_migrate_task/enable 1
+    write /sys/kernel/tracing/events/sched/sched_switch/enable 1
+    write /sys/kernel/tracing/events/sched/sched_task_util/enable 1
+    write /sys/kernel/tracing/events/sched/sched_update_history/enable 1
+    write /sys/kernel/tracing/events/sched/sched_update_task_ravg/enable 1
+    write /sys/kernel/tracing/events/sched/sched_wait_task/enable 1
+    write /sys/kernel/tracing/events/sched/sched_wakeup/enable 1
+    write /sys/kernel/tracing/events/sched/sched_wakeup_new/enable 1
+    write /sys/kernel/tracing/events/sched/sched_get_nr_running_avg/enable 1
+
+    # REM workqueue
+    write /sys/kernel/tracing/events/workqueue/enable 1
+    write /sys/kernel/tracing/events/workqueue/filter 1
+    write /sys/kernel/tracing/events/workqueue/workqueue_activate_work/enable 1
+    write /sys/kernel/tracing/events/workqueue/workqueue_execute_end/enable 1
+    write /sys/kernel/tracing/events/workqueue/workqueue_execute_start/enable 1
+    write /sys/kernel/tracing/events/workqueue/workqueue_queue_work/enable 1
+
+    write /sys/kernel/tracing/tracing_on 1
+
+    #subsystem SSR config(open wlan esoc SSR)
+    #write /sys/bus/msm_subsys/devices/subsys9/restart_level "related"
+
+
+#for agingtest dcc debug
+on property:persist.sys.agingtest=1
+    start bsp_debug
+
+service bsp_debug /vendor/bin/sh /odm/bin/init.oplus.bsp_debug.sh
+    class core
+    user shell
+    group root system log
+    disabled
+    oneshot
+
+service bsp_us_dump /vendor/bin/sh /odm/bin/init.oplus.bsp_us_dump.sh
+    class core
+    user shell
+    group root system log
+    disabled
+    oneshot

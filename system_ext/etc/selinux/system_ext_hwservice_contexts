@@ -1,0 +1,6 @@
+vendor.qti.hardware.sigma_miracast::Isigma_miracast             u:object_r:vendor_sigmahal_hwservice:s0
+vendor.qti.hardware.qccsyshal::IQccsyshal                       u:object_r:vendor_qccsyshal_hwservice:s0
+vendor.oplus.hardware.biometrics.fingerprintservice::IFingerprintHalService u:object_r:fwk_fingerprint_hwservice:s0
+vendor.oplus.hardware.biometrics.faceservice::IFaceHalService u:object_r:fwk_face_hwservice:s0
+android.framework.facesevice::IFaceHalService u:object_r:fwk_face_hwservice:s0
+vendor.oplus.hardware.commondcs::ICommonDcsHalService u:object_r:commondcs_hwservice:s0

@@ -1,0 +1,26 @@
+on property:ro.boot.hardware=qcom && property:persist.radio.multisim.config=dsds
+    start qti-modem-daemon-0
+    start qti-modem-daemon-1
+    start subsys-daemon
+
+on property:ro.boot.hardware=qcom && property:persist.radio.multisim.config=ssss
+    start qti-modem-daemon-0
+    start subsys-daemon
+
+service subsys-daemon /odm/bin/hw/subsys_daemon -l /odm/lib64/libsubsys-service.so
+    class hal
+    user root
+    group system
+    disabled
+
+service qti-modem-daemon-0 /odm/bin/hw/subsys_daemon -l /odm/lib64/libqti-radio-service.so -i 0
+    class hal
+    user root
+    group system
+    disabled
+
+service qti-modem-daemon-1 /odm/bin/hw/subsys_daemon -l /odm/lib64/libqti-radio-service.so -i 1
+    class hal
+    user root
+    group system
+    disabled

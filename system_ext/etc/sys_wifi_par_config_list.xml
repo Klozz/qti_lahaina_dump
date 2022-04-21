@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wifiromupdate>
+    <version>2021102814</version>
+    <isOpen>1</isOpen>
+    <!-- WIFI CONNECT TEAM -->
+    <!-- WIFI CONNECT TEAM :WifiStateMachine.java -->
+    <CONNECT_LINK_FLAPPING_DEBOUNCE_MSEC>4000</CONNECT_LINK_FLAPPING_DEBOUNCE_MSEC>
+    <CONNECT_ROAM_GUARD_TIMER_MSEC>15000</CONNECT_ROAM_GUARD_TIMER_MSEC>
+    <CONNECT_OBTAINING_IP_ADDRESS_GUARD_TIMER_MSEC>40000</CONNECT_OBTAINING_IP_ADDRESS_GUARD_TIMER_MSEC>
+
+    <!-- WIFI CONNECT TEAM :WifiConfigStore.java -->
+    <CONNECT_DEFAULT_MAX_DHCP_RETRIES>9</CONNECT_DEFAULT_MAX_DHCP_RETRIES>
+    <CONNECT_ENABLE_REMOVE_NETWORK_WITH_WRONGKEY>true</CONNECT_ENABLE_REMOVE_NETWORK_WITH_WRONGKEY>
+
+    <!-- genglin.lian@PSW.CN.WiFi.Network.internet.2482161   -->
+    <!-- Add for private dns connect failure.-->
+    <OPLUS_PRIVATE_DNS_SHOW_DIALOG>true</OPLUS_PRIVATE_DNS_SHOW_DIALOG>
+
+    <!-- WIFI CONNECT TEAM :SupplicantStateTracker.java -->
+    <CONNECT_MAX_RETRIES_MANUAL_ASSOCIATION_REJECT>5</CONNECT_MAX_RETRIES_MANUAL_ASSOCIATION_REJECT>
+    <CONNECT_MAX_RETRIES_ON_AUTHENTICATION_FAILURE>1</CONNECT_MAX_RETRIES_ON_AUTHENTICATION_FAILURE>
+    <CONNECT_MAX_WRONG_KEY_COUNT>2</CONNECT_MAX_WRONG_KEY_COUNT>
+    <CONNECT_TIMEOUT_ASSOC_REJECT>15000</CONNECT_TIMEOUT_ASSOC_REJECT>
+    <CONNECT_TIMEOUT_MANUAL_CONNECT>80000</CONNECT_TIMEOUT_MANUAL_CONNECT>
+    <CONNECT_TIMEOUT_AUTO_CONNECT>20000</CONNECT_TIMEOUT_AUTO_CONNECT>
+    <CONNECT_TIMEOUT_AUTH_FAILURE>15000</CONNECT_TIMEOUT_AUTH_FAILURE>
+    <CONNECT_TIMEOUT_SELECT>9500</CONNECT_TIMEOUT_SELECT>
+    <CONNECT_TIMEOUT_P2P_CONNECTED_SELECT >14000</CONNECT_TIMEOUT_P2P_CONNECTED_SELECT>
+    <CONNECT_MAX_RETRIES_ON_ASSOCIATION_REJECT>12</CONNECT_MAX_RETRIES_ON_ASSOCIATION_REJECT>
+
+    <CONNECT_TRIGGER_DUMPINFO_THRESHOLD>1</CONNECT_TRIGGER_DUMPINFO_THRESHOLD>
+
+    <!-- Add for Supplicant HIDL null object recovery -->
+    <SUPPLICANT_ERROR_RECOVERY_ENABLED>true</SUPPLICANT_ERROR_RECOVERY_ENABLED>
+    <SUPPLICANT_ERROR_COUNT>30</SUPPLICANT_ERROR_COUNT>
+    <!-- Add for wpa_supplicant cmd failure recovery -->
+    <SUPPLICANT_FAILURE_TRIGGER_RECOVERY>true</SUPPLICANT_FAILURE_TRIGGER_RECOVERY>
+    <SUPPLICANT_FAILURE_THRESHOLD>50</SUPPLICANT_FAILURE_THRESHOLD>
+
+    <!-- WIFI CONNECT TEAM :Add for get wifiInfo permission white list -->
+    <CONNECT_WIFIINFO_PACKAGE>com.android.server.wifi,com.coloros.wifisecuredetect</CONNECT_WIFIINFO_PACKAGE>
+    <!-- WIFI NETWORK TEAM -->
+    <NETWORK_CHECK_INTERNET_AFTER_DRIVER_ROAMING>true</NETWORK_CHECK_INTERNET_AFTER_DRIVER_ROAMING>
+    <!-- WiFi.Network.internet.N18 873764 -->
+    <NETWORK_MTU>1500</NETWORK_MTU>
+    <NETWORK_MTU_SERVER>conn3.coloros.com/mtuprobe,conn4.coloros.com/mtuprobe,conn5.coloros.com/mtuprobe</NETWORK_MTU_SERVER>
+
+
+    <!-- Rongzheng.tang@Connectivity.WiFi.Network.quality.FN5 -->
+    <!-- com.google.android.gms,  com.google.android.location -->
+    <!-- com.google.uid.shared -->
+    <NETWORK_SYSTEM_APP>com.google,com.android</NETWORK_SYSTEM_APP>
+    <NETWORK_LOCATION_APP>baidu.map,baidu.location,com.amap,android.gms,android.location,com.didi.es.psngr,com.sdu.didi.psnger,com.sdu.didi.gsui,com.jingyao.easybike,com.didapinche.booking,com.mobike.mobikeapp,so.ofo.labofo,com.lalamove.huolala.client,me.ele,com.sankuai.meituan.takeoutnew,com.sankuai.meituan.dispatch.crowdsource,com.meituan.banma.errand,com.sankuai.meituan.dispatch.homebrew,com.dianping.v1,com.taobao.mobile.dipei,com.sankuai.meituan,com.tencent.mm,com.tencent.mobileqq,com.sina.weibo</NETWORK_LOCATION_APP>
+    <NETWORK_GAME_APP>com.netease.hyxd,com.imangi.templerun,com.wepie.snake,com.ztgame.bob,com.tencent.tmgp,com.kiloo.subwaysurf</NETWORK_GAME_APP>
+    <NETWORK_WIFI_APP>com.tencent.tmgp.pubgmhd,com.coloros.assistantscreen,com.coloros.backuprestore,com.lenovo.anyshare,com.snda.wifilocating,com.qihoo.freewifi,com.tencent.wifimanager,com.farproc.wifi.analyzer</NETWORK_WIFI_APP>
+    <NETWORK_NAVIGATION_APP>com.baidu.BaiduMap,com.autonavi.minimap,com.sogou.map.android.maps,com.tencent.map,com.google.android.apps.maps,com.google.android.gms,com.baidu.map.location,com.tencent.android.location,com.amap.android.location,com.amap.android.ams,com.coloros.sceneservice,com.coloros.backuprestore</NETWORK_NAVIGATION_APP>
+    <NETWORK_WIFI_APP_BLACKLIST>com.sankuai.meituan.dispatch.homebrew,com.sankuai.meituan.meituanwaimaibusiness</NETWORK_WIFI_APP_BLACKLIST>
+    <NETWORK_IOT_SCAN_DEV_APP>com.huawei.smarthome</NETWORK_IOT_SCAN_DEV_APP>
+
+    <!-- GongTao@CONNECTIVITY.WIFI.CONNECTION.CONNECT.2282404, 2019/08/29, -->
+    <!-- Add for add forbidding enable network -->
+    <FORBIDDEN_WIFI_ENNETWORK_APP_LIST>com.huawei.health</FORBIDDEN_WIFI_ENNETWORK_APP_LIST>
+
+    <!-- GongTao@CONNECTIVITY.WIFI.CONNECTION.CONNECT.2882111, 2020/03/16, -->
+    <!-- Add for forbidding app disable wifi -->
+    <FORBIDDEN_WIFI_DISNETWORK_APP_LIST>me.ele.crowdsource</FORBIDDEN_WIFI_DISNETWORK_APP_LIST>
+
+    <!-- Gongtao@CONNECTIVITY.WIFI.CONNECT.SCAN.13378, 2020/05/21, -->
+    <!-- Add for: change scan strategy in wifi open ,screen on -->
+    <MAX_RUS_PERIODIC_SCAN_INTERVAL_MS>120000</MAX_RUS_PERIODIC_SCAN_INTERVAL_MS>
+    <!-- Gongtao@CONNECTIVITY.WIFI.CONNECT.SCAN.13378, 2020/05/21, -->
+    <!-- Add for third apk scan restrictive condition -->
+    <RUS_SCAN_REQUEST_THROTTLE_TIME_WINDOW_FG_APPS_MS>30000</RUS_SCAN_REQUEST_THROTTLE_TIME_WINDOW_FG_APPS_MS>
+    <RUS_SCAN_REQUEST_THROTTLE_MAX_IN_TIME_WINDOW_FG_APPS>1</RUS_SCAN_REQUEST_THROTTLE_MAX_IN_TIME_WINDOW_FG_APPS>
+
+    <!--Gong Tao@PSW.CN.WiFi.Connect.disconnect.1224726, 2019/10/23, -->
+    <!-- add for bug1224726,wifisecuredetect no permission to remove network -->
+    <NETWORK_REMOVE_APP>com.coloros.wifisecuredetect,com.coloros.oshare</NETWORK_REMOVE_APP>
+
+    <!-- Yuan.Huang@Connectivity.Wifi.Network.internet.N4, 2017/01/18, -->
+    <!-- Add for add default dns and adjust the order of dns servers -->
+    <NETWORK_INVALID_NS_THRESHOLD>2</NETWORK_INVALID_NS_THRESHOLD>
+
+    <!-- Jie.Huang@PSW.CN.WiFi.Network.internet.1596083 2018/11/05, -->
+    <!-- Add for to support oppo dns self recovery engine -->
+    <NETWORK_DNS_RECOVERY_ENGINE_ENABLE>true</NETWORK_DNS_RECOVERY_ENGINE_ENABLE>
+    <NETWORK_DNS_QUERY_SERVER>conn3.coloros.com,conn4.coloros.com,conn5.coloros.com</NETWORK_DNS_QUERY_SERVER>
+    <NETWORK_DNS_QUERY_SERVER_EXP>www.google.com</NETWORK_DNS_QUERY_SERVER_EXP>
+    <NETWORK_DNS_QUERY_TIMEOUT>2000</NETWORK_DNS_QUERY_TIMEOUT>
+    <NETWORK_DNS_QUERY_RETRY_COUNT>2</NETWORK_DNS_QUERY_RETRY_COUNT>
+
+    <!-- WangGuoqiang@CONNECTIVITY.WIFI.Basic.LogCollector,2020/03/30-->
+    <!-- add for collect log-->
+    <OPLUS_BASIC_EXCEPTION_ENABLE>true</OPLUS_BASIC_EXCEPTION_ENABLE>
+    <OPLUS_BASIC_EXCEPTION_LOG_REASON>null</OPLUS_BASIC_EXCEPTION_LOG_REASON>
+
+    <!-- Yuan.Huang@PSW.CN.WiFi.Network.internet.1197891, 2018/04/10, -->
+    <!-- Add for SLA -->
+    <NETWORK_SLA_ENABLED>true</NETWORK_SLA_ENABLED>
+    <NETWORK_SLA_APPS_DEFAULT_STATE>true</NETWORK_SLA_APPS_DEFAULT_STATE>
+    <NETWORK_SLA_APPS>com.heytap.browser,com.android.browser,com.coloros.browser,com.UCMobile,com.tencent.mm,com.tencent.mobileqq,com.sina.weibo,
+                           ,com.netease.newsreader.activity,com.ss.android.article.news,com.jingdong.app.mall,com.taobao.taobao,com.tmall.wireless,
+                           ,com.achievo.vipshop,com.xunmeng.pinduoduo,com.baidu.tieba,com.qzone,com.zhihu.android,com.xingin.xhs,com.baidu.browser.apps,
+                           ,com.tencent.mtt,com.eg.android.AlipayGphone,me.ele,com.sankuai.meituan,com.sankuai.meituan.takeoutnew,com.dianping.v1,
+                           ,com.moji.mjweather,ctrip.android.view,com.Qunar,com.tencent.news,com.tencent.reading</NETWORK_SLA_APPS>
+    <NETWORK_SLA_APPS_EXP>com.whatsapp,in.mohalla.sharechat,app.buzz.share,com.facebook.orca,com.UCMobile.intl,
+                           ,com.mcent.browser,com.redefine.welike,com.instagram.android,com.heytap.browser,com,com.android.browser,
+                           ,com.coloros.browser,com.android.chrome,com.facebook.katana,org.mozilla.firefox,com.opera.browser</NETWORK_SLA_APPS_EXP>
+    <NETWORK_SLA_GAME_APPS>not.defined,com.tencent.tmgp.sgame,com.tencent.tmgp.pubgmhd</NETWORK_SLA_GAME_APPS>
+    <NETWORK_SLA_GAME_APPS_EXP>not.defined,not.defined,com.tencent.ig</NETWORK_SLA_GAME_APPS_EXP>
+    <NETWORK_SLA_ENABLED_MCC>460,404-405-406</NETWORK_SLA_ENABLED_MCC>
+    <NETWORK_SLA_PARAMS>200,500,1000,500,230,200,220,55,75,2000,2200,200,55</NETWORK_SLA_PARAMS>
+    <NETWORK_SPEED_RTT_PARAMS>150,100,250,200,150,0,5,10,15,10,5,0,5</NETWORK_SPEED_RTT_PARAMS>
+    <NETWORK_SLA_GAME_PARAMS>4#8#00000001000c0003,4#8#000003e9000c0003,5#5#0864100118,5#5#0865100018</NETWORK_SLA_GAME_PARAMS>
+    <!-- Shixing.Ke@PSW.CN.WiFi.Network.internet.1809314, 2019/08/16, -->
+    <OPLUS_SLA_SET_DEBUG>false</OPLUS_SLA_SET_DEBUG>
+    <!-- Zaogen.Hong@PSW.CN.WiFi.Connect.smartWifi.72200 ,2020/05/07, -->
+    <!-- Add for wifi assistant version 5 -->
+    <WIFI_ASSISTANT_FIFTH_VERSION_ENABLED>true</WIFI_ASSISTANT_FIFTH_VERSION_ENABLED>
+    <SWITCH_WIFI_SCORE_THRESHOLD>59</SWITCH_WIFI_SCORE_THRESHOLD>
+    <WIFI_ASSISTANT_USE_TCPANDDNS_SCORE_ENABLED>true</WIFI_ASSISTANT_USE_TCPANDDNS_SCORE_ENABLED>
+    <OPLUS_WIFI_ASSISTANT_STATIC_WIFI_PROBE_FAST_TIME_THRESHOLD>1000</OPLUS_WIFI_ASSISTANT_STATIC_WIFI_PROBE_FAST_TIME_THRESHOLD>
+    <OPLUS_WIFI_ASSISTANT_TCPANDDNS_SCORE_TIME_DIFF>8000,8000,8000</OPLUS_WIFI_ASSISTANT_TCPANDDNS_SCORE_TIME_DIFF>
+    <OPLUS_WIFI_ASSISTANT_TCPANDDNS_SCORE_TIME_STRONG_SIGNAL>25,25,25</OPLUS_WIFI_ASSISTANT_TCPANDDNS_SCORE_TIME_STRONG_SIGNAL>
+    <OPLUS_WIFI_ASSISTANT_TCPANDDNS_SCORE_TIME_LOW_SIGNAL>30,30,30,</OPLUS_WIFI_ASSISTANT_TCPANDDNS_SCORE_TIME_LOW_SIGNAL>
+    <OPLUS_WIFI_ASSISTANT_TCPANDDNS_SCORE_SIGNAL>-70</OPLUS_WIFI_ASSISTANT_TCPANDDNS_SCORE_SIGNAL>
+    <OPLUS_WIFI_ASSISTANT_DELTA_RX_TRAFFIC_BYTES_THRESHOLD>75000</OPLUS_WIFI_ASSISTANT_DELTA_RX_TRAFFIC_BYTES_THRESHOLD>
+    <OPLUS_WIFI_ASSISTANT_DETECT_INTER_RESULT_CHECK>true</OPLUS_WIFI_ASSISTANT_DETECT_INTER_RESULT_CHECK>
+
+    <!-- Yuan.Huang@PSW.CN.WiFi.Network.internet.1809314, 2019/07/26, -->
+    <!-- Add for dual wifi -->
+    <NETWORK_DUAL_STA_APPS>com.heytap.browser,com.android.browser,com.coloros.browser,com.UCMobile,com.tencent.mtt,com.baidu.browser.apps,sogou.mobile.explorer,
+                           ,com.tencent.mm,com.tencent.mobileqq,com.sina.weibo,com.qzone,com.zhihu.android,com.baidu.tieba,
+                           ,com.tencent.wework,com.tencent.androidqqmail,com.netease.newsreader.activity,com.ss.android.article.news,com.tencent.news,com.tencent.reading,
+                           ,com.jifen.qukan,com.sohu.newsclient,com.sina.news,com.taobao.taobao,com.jingdong.app.mall,com.tmall.wireless,com.achievo.vipshop,
+                           ,com.xunmeng.pinduoduo,com.xingin.xhs,com.kaola,com.meiyou.youzijie,com.mogujie,com.huanshou.taojj,com.jm.android.jumei,com.suning.mobile.ebuy,
+                           ,com.eg.android.AlipayGphone,me.ele,com.sankuai.meituan,com.sankuai.meituan.takeoutnew,com.dianping.v1,com.moji.mjweather,bubei.tingshu,
+                           ,com.xiachufang,com.gotokeep.keep,com.soufun.app,com.meilishuo,com.tencent.weread,com.qq.reader,com.kuaikan.comic,cn.xuexi.android,
+                           ,com.handsgo.jiakao.android,com.homelink.android,com.lianjia.beike,com.anjuke.android.app,com.wuba,com.meitu.meiyancamera,com.didapinche.booking,
+                           ,com.cubic.autohome,com.alibaba.android.rimet,com.tmri.app.main,com.taobao.idlefish,com.tencent.karaoke,com.ximalaya.ting.android,com.sdu.didi.psnger,
+                           ,ctrip.android.view,com.Qunar,com.taobao.trip,com.tencent.qqlive,com.qiyi.video,
+                           ,com.sohu.sohuvideo,com.bokecc.dance,cn.xiaochuankeji.tieba,com.baidu.haokan,com.tencent.weishi,
+                           ,com.netease.cloudmusic,com.kugou.android,
+                           ,com.tencent.qqmusic,cn.kuwo.player,com.tencent.android.qqdownloader,com.oppo.market,com.heytap.market,com.nearme.gamecenter,com.xunlei.downloadprovider,
+                           ,com.baidu.netdisk,com.wandoujia.phoenix2,com.baidu.BaiduMap,com.autonavi.minimap,com.tencent.map,com.sup.android.superb</NETWORK_DUAL_STA_APPS>
+    <NETWORK_DUAL_STA_APPS_EXP>com.whatsapp,com.facebook.katana,com.instagram.android,com.facebook.orca,com.facebook.lite,com.truecaller,org.telegram.messenger,com.facebook.mlite,
+                           ,in.mohalla.sharechat,com.snapchat.android,jp.naver.line.android,com.UCMobile.intl,com.opera.mini.native,com.opera.browser,org.mozilla.firefox,com.mcent.browser,
+                           ,in.amazon.mShop.android.shopping,com.flipkart.android,com.shopee.id,com.tokopedia.tkpd,com.bukalapak.android,com.lazada.android,com.lenovo.anyshare.gps,
+                           ,com.jio.myjio,com.whereismytrain.android,com.phonepe.app,com.application.zomato,com.telkomsel.telkomselcm,com.eterno,com.twitter.android,com.uc.iflow,
+                           ,com.jio.media.jioxpressnews,com.zhiliaoapp.musically,com.mxtech.videoplayer.ad,com.ss.android.ugc.trill,video.like,com.ss.android.ugc.trill.go,
+                           ,com.uc.vmate,com.zhiliaoapp.musically.go,in.startv.hotstar,com.google.android.youtube,com.jio.jioplay.tv,com.amazon.avod.thirdpartyclient,com.tv.v18.viola,
+                           ,tv.accedo.airtel.wynk,com.netflix.mediaclient,com.yy.hiyo,com.heytap.browser,com.android.browser,com.coloros.browser</NETWORK_DUAL_STA_APPS_EXP>
+    <NETWORK_VIDEO_APPS>com.tencent.qqlive,com.youku.phone,com.qiyi.video,com.sohu.sohuvideo,tv.danmaku.bili,com.ss.android.ugc.aweme,com.smile.gifmaker,air.tv.douyu.android,
+                           ,com.ss.android.ugc.live,com.hunantv.imgo.activity,com.ss.android.article.video,com.duowan.kiwi,com.bokecc.dance,cn.xiaochuankeji.tieba,
+                           ,com.meelive.ingkee,com.tencent.weishi,com.huajiao,com.baidu.haokan</NETWORK_VIDEO_APPS>
+    <NETWORK_DOWNLOAD_APPS>com.tencent.android.qqdownloader,com.oppo.market,com.heytap.market,com.nearme.gamecenter,com.xunlei.downloadprovider,com.baidu.netdisk,com.wandoujia.phoenix2</NETWORK_DOWNLOAD_APPS>
+    <NETWORK_REQUESTOR_APPS>com.heytap.market,com.tencent.cmocmna</NETWORK_REQUESTOR_APPS>
+
+    <NETWORK_SKIP_DESTROY_SOCKET_APPS>com.tencent.mm,com.tencent.mobileqq,com.alibaba.android.rimet</NETWORK_SKIP_DESTROY_SOCKET_APPS>
+    <!-- YangJiang@CONNECTIVITY.WiFi.Network.1809314, 2020/12/09, -->
+    <!-- sta2 connect to portal AP-->
+    <OPLUS_DUAL_STA_CONNECT_CAPTIVE_AP>false</OPLUS_DUAL_STA_CONNECT_CAPTIVE_AP>
+    <!-- Yuan.Huang@PSW.CN.WiFi.Network.internet.1461349, 2018/06/18, -->
+    <!-- Add for WeChat lucky money recognition -->
+    <NETWORK_WECHAT_LM_PARAMS>1350#1200#0#4#17f10304,1450#1200#0#4#17f10305,1800#1250#0#4#17f10306,1800#1250#0#4#17f10307</NETWORK_WECHAT_LM_PARAMS>
+
+    <!-- Xiao.Li@PSW.CN.Wifi.Network.Datastall.1140781, 2018/11/17, -->
+    <!-- Add for Datastall Reason Don't Upload Logs -->
+    <DATA_STALL_DONT_UPLOAD_LOG_REASON>2,3,5,6,8,11,256,258,523</DATA_STALL_DONT_UPLOAD_LOG_REASON>
+
+    <!-- PengHao@NETWORK.DATA.110873, 2020/06/28-->
+    <!-- Add for oppo background data limit.-->
+    <OPLUS_MUST_LIMIT_APP>com.ss.android.ugc.aweme:4000,com.tencent.weishi:4000,com.smile.gifmaker:4000,air.tv.douyu.android:4000,com.duowan.kiwi:4000,com.qiyi.video:4000,com.tencent.qqlive:4800,tv.danmaku.bili:4000,com.youku.phone:4000</OPLUS_MUST_LIMIT_APP>
+    <NETWORK_LIMIT_SPEED_WHITE_APPS>com.tencent.mm,com.tencent.mobileqq,com.immomo.momo,us.zoom.videomeetings,com.alibaba.android.rimet,com.tencent.wemeet.app,com.inpor.fastmeetingcloud,com.heytap.cast,com.heytap.synergy,com.android.dlna.service,com.heytap.accessory,com.google.android.networkstack,com.oppo.optvassistant,com.oplus.onelauncher,net.he.networktools,com.oplus.cast</NETWORK_LIMIT_SPEED_WHITE_APPS>
+    <OPLUS_FORCE_LIMIT_APP>com.tencent.mm:3200,com.tencent.mobileqq:3200,com.heytap.browser:4000,com.taobao.taobao:4000,com.coloros.assistantscreen:2400,com.youku.phone:6400,com.dianping.v1:3200,com.coloros.note:1200,
+        ,com.ss.android.ugc.aweme:4000,com.ss.android.article.news:3200,com.tencent.tmgp.sgame:2400,com.baidu.BaiduMap:3200,com.eg.android.AlipayGphone:3200,com.coloros.screenrecorder:4000</OPLUS_FORCE_LIMIT_APP>
+    <OPLUS_IGNORE_LIMIT_APP>com.coloros.gallery3d,com.coloros.filemanager,com.coloros.calendar,com.oppo.camera,com.coloros.soundrecorder,android.uid.systemui,com.oppo.otaui,com.coloros.calculator,
+                        ,com.coloros.alarmclock,com.android.contacts,com.android.mms,com.android.permissioncontroller,com.coloros.logkit,com.oneplus.camera</OPLUS_IGNORE_LIMIT_APP>
+    <OPLUS_HIGH_LIMIT_ACTIVITY>com.ss.android.ugc.aweme.live.LivePlayActivity,com.tencent.mm.plugin.voip.ui.VideoActivity,com.tencent.mm.plugin.topstory.ui.video.list.TopStoryListVideoUI,
+                            ,com.taobao.taolive.room.TaoLiveVideoActivity,com.youku.ui.activity.DetailActivity,com.ss.android.xiagualongvideo.detail.LongVideoDetailActivity</OPLUS_HIGH_LIMIT_ACTIVITY>
+    <OPLUS_DATA_LIMIT_CONFIG>0,0,0,0,0,0,4020,0,0,0</OPLUS_DATA_LIMIT_CONFIG>
+
+    <!-- Wei.Wang@PSW.CN.WiFi.Network.internet.1072996, 2017/08/26,   -->
+    <!-- Add for [1072996],add romupdate function for  Handle gateway conflict-->
+    <NETWORK_HANDLE_GATEWAY_CONFLICT>true</NETWORK_HANDLE_GATEWAY_CONFLICT>
+
+    <!-- Wei.Wang@PSW.CN.WiFi.Network.internet.1426481, 2018/06/13,   -->
+    <!-- add for [BUGID] to detect IP conflicft-->
+    <NETWORK_DETECT_IP_CONFLICT>true</NETWORK_DETECT_IP_CONFLICT>
+
+    <!-- Wei.Wang@PSW.CN.WiFi.Network.internet.1518321, 2018/08/10,   -->
+    <!-- add for [1518321] to avoid long time to query dns-->
+    <NETWORK_IPV6_SIMEPLE_QUERY>true</NETWORK_IPV6_SIMEPLE_QUERY>
+    <NETWORK_IPV6_RETRIES>1</NETWORK_IPV6_RETRIES>
+    <NETWORK_IPV6_TIMEOUT>2</NETWORK_IPV6_TIMEOUT>
+
+    <!-- Wei.Wang@PSW.CN.WiFi.Network.internet.1854886, 2019/03/01,   -->
+    <!-- Add for [1854886]-->
+    <NETWORKS_USE_LOGIN_ACTIVITY>MEA_GUEST,Marriott,InterContinental,vienna,RitzCarlton,Shangri-La,FourSeasons,Cathay</NETWORKS_USE_LOGIN_ACTIVITY>
+
+    <!-- Hao.Peng@PSW.CN.Wifi.Network.internet.2078165, 2019/06/07,   -->
+    <!-- Add for [2078165] new OppoNetworkMonitor -->
+    <NETWORKS_USE_OPPOSTACK>true</NETWORKS_USE_OPPOSTACK>
+
+    <!-- Wei.Wang@PSW.CN.WiFi.Network.login.1854960, 2019/03/30,   -->
+    <!-- Add for [1854960] disable tcp random timestamp,some networks limit tcp syn before login-->
+    <CHANGE_TCP_RANDOM_TIMESTAMP>true</CHANGE_TCP_RANDOM_TIMESTAMP>
+
+    <!-- Hao.Peng@PSW.CN.Wifi.Network.internet.2179500   -->
+    <!-- Add for wechat lost long connection.-->
+    <NETWORK_WECHAT_LC_ENABLE>true</NETWORK_WECHAT_LC_ENABLE>
+    <NETWORK_WECHAT_LC_VALUE>17f103</NETWORK_WECHAT_LC_VALUE>
+
+    <!-- WIFI BASIC TEAM -->
+    <BASIC_WIFI_OPEN_TIME>300</BASIC_WIFI_OPEN_TIME>
+    <BASIC_SCAN_REJECT_COUNT>6</BASIC_SCAN_REJECT_COUNT>
+    <BASIC_SCAN_CMD_DOWN_COUNT>6</BASIC_SCAN_CMD_DOWN_COUNT>
+    <BASIC_FOOL_PROOF_ON>1</BASIC_FOOL_PROOF_ON>
+
+    <!-- JiaoBo@CONNECTIVITY.WIFI.BASIC.SWITCH.1069763, 2020/07/10 -->
+    <!-- Add for: collect wifi switch log -->
+    <OPLUS_BASIC_WIFI_SWITCH_LOG_COLLECT_ENABLED>true</OPLUS_BASIC_WIFI_SWITCH_LOG_COLLECT_ENABLED>
+    <OPLUS_BASIC_WIFI_FRAMEWORK_CHECK_WIFI_SWITCH>true</OPLUS_BASIC_WIFI_FRAMEWORK_CHECK_WIFI_SWITCH>
+    <OPLUS_BASIC_WIFI_SWITCH_LOG_STAGE>4</OPLUS_BASIC_WIFI_SWITCH_LOG_STAGE>
+    <OPLUS_BASIC_WIFI_SWITCH_LOG_LIMIT>3</OPLUS_BASIC_WIFI_SWITCH_LOG_LIMIT>
+    <OPLUS_BASIC_WIFI_SWITCH_RETRY_LIMIT>3</OPLUS_BASIC_WIFI_SWITCH_RETRY_LIMIT>
+
+    <!-- JiaoBo@PSW.CN.WiFi.Basic.SoftAP.1986064, 2019/05/07 -->
+    <!-- Add for: scan And Ap Concurrency support -->
+    <OPLUS_BASIC_SCAN_AND_SOFTAP_CONCURRENCY_ENABLED>true</OPLUS_BASIC_SCAN_AND_SOFTAP_CONCURRENCY_ENABLED>
+    <OPLUS_BASIC_SCAN_AND_SOFTAP_CONCURRENCY_LOCATION_PKG>com.baidu.map.location,com.amap.android.location,com.amap.android.ams,com.autonavi.minimap,com.baidu.BaiduMap</OPLUS_BASIC_SCAN_AND_SOFTAP_CONCURRENCY_LOCATION_PKG>
+
+    <!-- Guotian.Wu@PSW.CN.Wifi.Basic.P2P.2298648, 2019/05/09 -->
+    <!-- add for collect wifip2p log -->
+    <OPLUS_BASIC_WIFI_P2P_WFD_LOG_COLLECT_ENBALE>true</OPLUS_BASIC_WIFI_P2P_WFD_LOG_COLLECT_ENBALE>
+    <OPLUS_BASIC_WIFI_P2P_OSHARE_LOG_COLLECT_ENBALE>false</OPLUS_BASIC_WIFI_P2P_OSHARE_LOG_COLLECT_ENBALE>
+
+    <!-- Tao.Hui@PSW.CN.WiFi.Basic.Custom.1884719, 2019/03/09 -->
+    <!-- add for bdf fw rus -->
+    <OPLUS_BASIC_WIFI_CUSTOM_WCN_SAU>true</OPLUS_BASIC_WIFI_CUSTOM_WCN_SAU>
+    <OPLUS_BASIC_WIFI_CUSTOM_WCN_SAU_BDF>true</OPLUS_BASIC_WIFI_CUSTOM_WCN_SAU_BDF>
+    <OPLUS_BASIC_WIFI_CUSTOM_WCN_SAU_FW>true</OPLUS_BASIC_WIFI_CUSTOM_WCN_SAU_FW>
+
+    <!-- JiaoBo@CONNECTIVITY.WIFI.BASIC.HARDWARE.2795386, 2020/02/20 -->
+    <!-- add for: support auto update function, include mtk fw, mtk wifi.cfg, qcom fw, qcom bdf, qcom ini -->
+    <OPLUS_BASIC_WIFI_CUSTOM_WCN_RUS>true</OPLUS_BASIC_WIFI_CUSTOM_WCN_RUS>
+    <OPLUS_BASIC_WIFI_CUSTOM_WCN_RUS_MTK>true</OPLUS_BASIC_WIFI_CUSTOM_WCN_RUS_MTK>
+    <OPLUS_BASIC_WIFI_CUSTOM_WCN_RUS_QCOM>false</OPLUS_BASIC_WIFI_CUSTOM_WCN_RUS_QCOM>
+
+    <!-- HuiTao@CONNECTIVITY.WIFI.BASIC.HARDWARE.SIGNAL.1067910, 2020/10/16 -->
+    <!-- add for: RSSI SMOOTH add level 2 +2db  level 3 +3db-->
+    <OPLUS_WIFI_HW_SIGNAL_LEVEL2_ADVANCE>2</OPLUS_WIFI_HW_SIGNAL_LEVEL2_ADVANCE>
+    <OPLUS_WIFI_HW_SIGNAL_LEVEL3_ADVANCE>3</OPLUS_WIFI_HW_SIGNAL_LEVEL3_ADVANCE>
+
+    <!-- JiaoBo@CONNECTIVITY.WIFI.HARDWARE.CRASH.1162003, 2020/06/11 -->
+    <!-- add for wifi dump related log collection and DCS handle, dynamic enable/disable wifi core dump, offer trigger wifi dump API. -->
+    <BASIC_WIFI_DUMP_ENABLE>true</BASIC_WIFI_DUMP_ENABLE>
+    <BASIC_WIFI_FULLDUMP_ENABLE>true</BASIC_WIFI_FULLDUMP_ENABLE>
+
+    <!-- WIFI POWER TEAM -->
+    <POWER_APP_SCAN_COUNT>10</POWER_APP_SCAN_COUNT>
+    <POWER_APP_SCAN_FREQ>1</POWER_APP_SCAN_FREQ>
+    <POWER_APP_DETECT_AND_KILL>true</POWER_APP_DETECT_AND_KILL>
+
+    <!-- Tao.Hui@PSW.CN.WiFi.Basic.Custom.2062392, 2019/06/01,-->
+    <!-- add for Add for: softap and p2p close 5G band in Japan-->
+    <OPLUS_BASIC_WIFI_CUSTOM_P2P_ONLY2G_BADN_LIMIT>false</OPLUS_BASIC_WIFI_CUSTOM_P2P_ONLY2G_BADN_LIMIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_P2P_BADN_LIMIT>false</OPLUS_BASIC_WIFI_CUSTOM_P2P_BADN_LIMIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_P2P_BAND4_COUNTEY_LISIT>ES,IT,FR,NL,PL,BE,GB,TR,IE,EE,BG,RO,CH,DE,KZ,UA,KE,NZ,SA,TH,PH,LK,SG,AE,BD,IR,HK,KH,NG,PK,ID,NP,AU,MY,BR,CL,MO</OPLUS_BASIC_WIFI_CUSTOM_P2P_BAND4_COUNTEY_LISIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_P2P_ONLY2G_COUNTEY_LISIT>JP,MA,EG,TN,DZ,ET,MM</OPLUS_BASIC_WIFI_CUSTOM_P2P_ONLY2G_COUNTEY_LISIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_BADN_LIMIT>true</OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_BADN_LIMIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_BAND4_COUNTEY_LISIT>ES,IT,FR,NL,PL,BE,GB,TR,IE,EE,BG,RO,CH,DE,KZ,UA,KE,NZ,SA,TH,PH,LK,SG,AE,BD,IR,HK,KH,NG,PK,ID,NP,AU,MY,BR,CL,MO</OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_BAND4_COUNTEY_LISIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_COUNTEY_LISIT>JP,MA,EG,TN,DZ,ET,MM</OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_COUNTEY_LISIT>
+
+    <!-- zhaochengsheng@PSW.CN.WiFi.Basic.Custom.4478, 2020/04/13, -->
+    <!-- Add for: wifi sar feature -->
+    <OPLUS_BASIC_WIFI_CUSTOM_SENSOR_PROJECT>18397,18539,18383</OPLUS_BASIC_WIFI_CUSTOM_SENSOR_PROJECT>
+    <OPLUS_BASIC_WIFI_CUSTOM_TELEPHONE_PROJECT>19361,19362,19065,19066</OPLUS_BASIC_WIFI_CUSTOM_TELEPHONE_PROJECT>
+    <OPLUS_BASIC_WIFI_CUSTOM_ASIA_CE>ID,NP,NG,IQ,HK,MY,MM,EG,JO,TH,PK,MA,KE,LB,KH,LK,DZ,SA,PS,PH,UA,BD,TN,AE,VN,MO,BL,JP,TW,BR
+    </OPLUS_BASIC_WIFI_CUSTOM_ASIA_CE>
+    <OPLUS_BASIC_WIFI_CUSTOM_EUROPE_CE>AT,BE,BG,CY,HR,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,GB,SE,CH,NO,IS,LI,TR,MD,RU,UA,KZ,UZ,AU,NZ,SG,ZA
+    </OPLUS_BASIC_WIFI_CUSTOM_EUROPE_CE>
+    <OPLUS_BASIC_WIFI_CUSTOM_FCC>US,MX,CL,CO</OPLUS_BASIC_WIFI_CUSTOM_FCC>
+    <OPLUS_BASIC_WIFI_CUSTOM_INDE_CERT>JP,CN,CN</OPLUS_BASIC_WIFI_CUSTOM_INDE_CERT>
+    <OPLUS_BASIC_WIFI_CUSTOM_USE_INDE_CERT_PROJECT>19362,19825,20828</OPLUS_BASIC_WIFI_CUSTOM_USE_INDE_CERT_PROJECT>
+
+    <!-- Xiong.Li@CONNECTIVITY.WIFI.HARDWARE.POWER.331811, 2019/11/27 -->
+    <!-- Add for QPower -->
+    <OPLUS_WIFI_QPOWER_ENABLE>true</OPLUS_WIFI_QPOWER_ENABLE>
+    <OPPO_WIFI_QPOWER_APPS>com.tencent.qqlive,com.qiyi.video,com.smile.gifmaker,com.ss.android.ugc.aweme,com.UCMobile,com.tencent.mtt,com.ss.android.article.news,com.netease.newsreader.activity
+    </OPPO_WIFI_QPOWER_APPS>
+
+    <!-- FanBingqi@PSW.CN.WiFi.Connect.Scan.3420, 2020/03/17 -->
+    <!-- Add for supported Scenes -->
+    <OPLUS_SMART_SCAN_STILL_ENABLE>true</OPLUS_SMART_SCAN_STILL_ENABLE>
+    <OPLUS_SMART_SCAN_RUNNING_ENABLE>true</OPLUS_SMART_SCAN_RUNNING_ENABLE>
+    <OPLUS_SMART_SCAN_DCHECK_SIMILAR_THRED>0.7</OPLUS_SMART_SCAN_DCHECK_SIMILAR_THRED>
+    <OPLUS_SMART_SCAN_DCHECK_RSSI_THRED>-75</OPLUS_SMART_SCAN_DCHECK_RSSI_THRED>
+
+    <!-- Liwei@CONNECTIVITY.WIFI.NETWORK.AUTOCONNLOGIN.37599, 2020/07/16,   -->
+    <!-- Add for [37599],choose to use google  browser for portal login -->
+    <OPLUS_CAPTIVE_DIRECT_TO_BROWSER>false</OPLUS_CAPTIVE_DIRECT_TO_BROWSER>
+    <!-- mayishu Add for smart band-width decision -->
+    <SMART_BW_PARAMS>1,8,85,35100,8,100,2,5,2</SMART_BW_PARAMS>
+    <!-- KangYi@CONNECTIVITY.WIFI.NETWORK.NUDFAILEDRECOVERY, 2020/06/10 -->
+    <!-- Add for NUDFAILEDRECOVERY -->
+    <OPLUS_NUDFAILED_RECOVERY_PERM_NEIGH_ENABLE>true</OPLUS_NUDFAILED_RECOVERY_PERM_NEIGH_ENABLE>
+    <OPLUS_NUDFAILED_RECOVERY_REASSOC_ENABLE>false</OPLUS_NUDFAILED_RECOVERY_REASSOC_ENABLE>
+    <OPLUS_NUDFAILED_RECOVERY_COLDTIME_REASSOC>3600</OPLUS_NUDFAILED_RECOVERY_COLDTIME_REASSOC>
+
+    <!-- LiXiong@CONNECTIVITY.WIFI.NETWORK.ROUTERBOOST.111760 2020/9/12 -->
+    <!-- Add for RouterBoost -->
+    <ROUTERBOOST_ENABLE>true</ROUTERBOOST_ENABLE>
+    <ROUTERBOOST_DATAPRIOR_ENABLE>true</ROUTERBOOST_DATAPRIOR_ENABLE>
+    <ROUTERBOOST_DATAPRIOR_TOS>200</ROUTERBOOST_DATAPRIOR_TOS>
+    <ROUTERBOOST_DUPPKT_ENABLE>true</ROUTERBOOST_DUPPKT_ENABLE>
+    <ROUTERBOOST_DUPPKT_EXTEND_TCP>false</ROUTERBOOST_DUPPKT_EXTEND_TCP>
+    <ROUTERBOOST_INTCOMM_ENABLE>true</ROUTERBOOST_INTCOMM_ENABLE>
+    <ROUTERBOOST_INTCOMM_SOCK_PORT>65000</ROUTERBOOST_INTCOMM_SOCK_PORT>
+    <ROUTERBOOST_GAME_OUT_DELAY_MS>120000</ROUTERBOOST_GAME_OUT_DELAY_MS>
+    <ROUTERBOOST_CHECK_GAME_BOOST_DELAY_MS>30000</ROUTERBOOST_CHECK_GAME_BOOST_DELAY_MS>
+    <ROUTERBOOST_CHECK_GAME_ENABLE_DUALSTA_MS>60000</ROUTERBOOST_CHECK_GAME_ENABLE_DUALSTA_MS>
+
+    <ROUTERBOOST_DUPPKT_GAME_HIGH_LATENCY_ENABLE>true</ROUTERBOOST_DUPPKT_GAME_HIGH_LATENCY_ENABLE>
+    <ROUTERBOOST_DUPPKT_GAME_HIGH_LATENCY_MS>160</ROUTERBOOST_DUPPKT_GAME_HIGH_LATENCY_MS>
+    <ROUTERBOOST_DUPPKT_ENABLE_SLA_HIGH_LATENCY_MS>220</ROUTERBOOST_DUPPKT_ENABLE_SLA_HIGH_LATENCY_MS>
+    <ROUTERBOOST_DUPPKT_GAME_LOW_BATTERY_THRED>10</ROUTERBOOST_DUPPKT_GAME_LOW_BATTERY_THRED>
+    <ROUTERBOOST_DUPPKT_GAME_HIGH_TEMPERATURE_THRED>41</ROUTERBOOST_DUPPKT_GAME_HIGH_TEMPERATURE_THRED>
+
+    <ROUTERBOOST_DUPPKT_GAME_WHITE_LIST_ENABLE>true</ROUTERBOOST_DUPPKT_GAME_WHITE_LIST_ENABLE>
+    <ROUTERBOOST_DUPPKT_GAME_BLACK_LIST_ENABLE>false</ROUTERBOOST_DUPPKT_GAME_BLACK_LIST_ENABLE>
+    <ROUTERBOOST_DUPPKT_GAME_WHITE_LIST>com.tencent.tmgp.sgame</ROUTERBOOST_DUPPKT_GAME_WHITE_LIST>
+
+    <!-- LiXiong@CONNECTIVITY.WIFI.DISCONNECT.DISCONDELAYREPORT, 2020/06/01 -->
+    <!-- Add for disconnet delay display optimaztiong -->
+    <WIFI_DISCON_DELAY_REPORT_ENABLE>true</WIFI_DISCON_DELAY_REPORT_ENABLE>
+    <WIFI_DISCON_DELAY_REPORT_TIME>3000</WIFI_DISCON_DELAY_REPORT_TIME>
+    <WIFI_DISCON_DELAY_REPORT_STRONG_RSSI>-75</WIFI_DISCON_DELAY_REPORT_STRONG_RSSI>
+    <WIFI_DISCON_DELAY_REPORT_COOLTIME>60000</WIFI_DISCON_DELAY_REPORT_COOLTIME>
+
+    <!-- XuFenghua@CONNECTIVITY.WIFI.CONNECT.IOTConnect.572774, 2021/01/23 -->
+    <!-- Add for OplusIOTConnect feature -->
+    <OPLUS_IOTCONNECT_ENABLE>true</OPLUS_IOTCONNECT_ENABLE>
+    <OPLUS_IOTCONNECT_WHITE_LIST>com.heytap.smarthome,com.heytap.appplatform,com.coloros.sceneservice</OPLUS_IOTCONNECT_WHITE_LIST>
+    <OPLUS_IOTCONNECT_PACKAGE_CONTROL_THRESHOLD>5,15,600,30,3000</OPLUS_IOTCONNECT_PACKAGE_CONTROL_THRESHOLD>
+    <OPLUS_IOTCONNECT_LOG_ENABLE>true</OPLUS_IOTCONNECT_LOG_ENABLE>
+    <OPLUS_IOTCONNECT_LOG_RETURN_THRESHOLD>24</OPLUS_IOTCONNECT_LOG_RETURN_THRESHOLD>
+
+    <!-- Zuofa.Liu@CONNECTIVITY.WIFI.NETWORK, 2021/4/19 -->
+    <!-- Add for wifi low latency -->
+    <OPLUS_WIFI_LOW_LATENCY_ENABLED>true</OPLUS_WIFI_LOW_LATENCY_ENABLED>
+    <OPLUS_WIFI_LOW_LATENCY_GAME_LATENCY>100</OPLUS_WIFI_LOW_LATENCY_GAME_LATENCY>
+    <OPLUS_WIFI_LOW_LATENCY_GAME_APPS>com.tencent.tmgp.sgame,com.tencent.tmgp.pubgmhd</OPLUS_WIFI_LOW_LATENCY_GAME_APPS>
+    <OPLUS_WIFI_LOW_LATENCY_GAME_APPS_EXP>com.tencent.ig</OPLUS_WIFI_LOW_LATENCY_GAME_APPS_EXP>
+
+    <!-- Chuanye.Xu@PSW.CN.WiFi.Power.1039214, 2017/08/24, -->
+    <!-- Add for default AFP program convert from:
+    "!ether broadcast && !ip6 multicast && !ip broadcast
+        && !dst portrange 137-139 && !ip[19]=255 && ! igmp && !stp && !ether proto 0xbeef && !(ether[12:2] < 0x600 && ether[14:2] = 0xaaaa
+        && (ether[18:2] = 0x000c || ether[20:2] = 0x2000 || ether[20:2] = 0x00c6 || ether[22:4] = 0x0001af81))" -->
+    <APF_PROGRAM>
+(000) ld       [2]&#x000A;
+(001) jeq      #0xffffffff      jt 2    jf 4&#x000A;
+(002) ldh      [0]&#x000A;
+(003) jeq      #0xffff          jt 58   jf 4&#x000A;
+(004) ldh      [12]&#x000A;
+(005) jeq      #0x86dd          jt 6    jf 15&#x000A;
+(006) ldb      [38]&#x000A;
+(007) jeq      #0xff            jt 58   jf 8&#x000A;
+(008) ldb      [20]&#x000A;
+(009) jeq      #0x84            jt 12   jf 10&#x000A;
+(010) jeq      #0x6             jt 12   jf 11&#x000A;
+(011) jeq      #0x11            jt 12   jf 42&#x000A;
+(012) ldh      [56]&#x000A;
+(013) jge      #0x89            jt 14   jf 42&#x000A;
+(014) jgt      #0x8b            jt 42   jf 58&#x000A;
+(015) jeq      #0x800           jt 16   jf 36&#x000A;
+(016) ld       [30]&#x000A;
+(017) jeq      #0x0             jt 58   jf 18&#x000A;
+(018) jeq      #0xffffffff      jt 58   jf 19&#x000A;
+(019) jeq      #0xe00000fb      jt 58   jf 20&#x000A;
+(020) jeq      #0xe00000fc      jt 58   jf 21&#x000A;
+(021) jeq      #0xeffffffa      jt 58   jf 22&#x000A;
+(022) ldb      [23]&#x000A;
+(023) jeq      #0x84            jt 26   jf 24&#x000A;
+(024) jeq      #0x6             jt 26   jf 25&#x000A;
+(025) jeq      #0x11            jt 26   jf 32&#x000A;
+(026) ldh      [20]&#x000A;
+(027) jset     #0x1fff          jt 32   jf 28&#x000A;
+(028) ldxb     4*([14]&amp;0xf)&#x000A;
+(029) ldh      [x + 16]&#x000A;
+(030) jge      #0x89            jt 31   jf 32&#x000A;
+(031) jgt      #0x8b            jt 32   jf 58&#x000A;
+(032) ldb      [33]&#x000A;
+(033) jeq      #0xff            jt 58   jf 34&#x000A;
+(034) ldb      [23]&#x000A;
+(035) jeq      #0x2             jt 58   jf 42&#x000A;
+(036) jeq      #0x806           jt 38   jf 37&#x000A;
+(037) jeq      #0x8035          jt 38   jf 42&#x000A;
+(038) ld       [38]&#x000A;
+(039) jeq      #0xe00000fb      jt 58   jf 40&#x000A;
+(040) jeq      #0xe00000fc      jt 58   jf 41&#x000A;
+(041) jeq      #0xeffffffa      jt 58   jf 42&#x000A;
+(042) ldh      [12]&#x000A;
+(043) jgt      #0x5dc           jt 46   jf 44&#x000A;
+(044) ldb      [14]&#x000A;
+(045) jeq      #0x42            jt 58   jf 46&#x000A;
+(046) ldh      [12]&#x000A;
+(047) jeq      #0xbeef          jt 58   jf 48&#x000A;
+(048) jge      #0x600           jt 59   jf 49&#x000A;
+(049) ldh      [14]&#x000A;
+(050) jeq      #0xaaaa          jt 51   jf 59&#x000A;
+(051) ldh      [18]&#x000A;
+(052) jeq      #0xc             jt 58   jf 53&#x000A;
+(053) ldh      [20]&#x000A;
+(054) jeq      #0x2000          jt 58   jf 55&#x000A;
+(055) jeq      #0xc6            jt 58   jf 56&#x000A;
+(056) ld       [22]&#x000A;
+(057) jeq      #0x1af81         jt 58   jf 59&#x000A;
+(058) ret      #0&#x000A;
+(059) ret      #262144
+    </APF_PROGRAM>
+
+</wifiromupdate>

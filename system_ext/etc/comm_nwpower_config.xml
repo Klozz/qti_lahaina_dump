@@ -1,0 +1,95 @@
+<NwPower>
+    <NwPowerVersion>20200430</NwPowerVersion>
+
+    <BootNwPowerNetController>1</BootNwPowerNetController>
+    <BootBlackListRST>1</BootBlackListRST>
+    <BootBlackListFirewall>1</BootBlackListFirewall>
+    <BootBlackListRSTWhiteList>1</BootBlackListRSTWhiteList>
+
+    <UnifiedRstDelayNumOne>60</UnifiedRstDelayNumOne>
+    <UnifiedRstDelayNumOneTimes>1</UnifiedRstDelayNumOneTimes>
+    <UnifiedRstDelayNumOneInterval>300</UnifiedRstDelayNumOneInterval>
+    <MaxUnifiedRstDelayNumOne>300</MaxUnifiedRstDelayNumOne>
+    <UnifiedRstDelayNumOneRestore>1800</UnifiedRstDelayNumOneRestore>
+    <UnifiedRstDelayNumTwo>10</UnifiedRstDelayNumTwo>
+    <UnifiedRstDelayExemptTimes>20</UnifiedRstDelayExemptTimes>
+
+    <BootNetworkMonitor>1</BootNetworkMonitor>
+    <NetworkMonitorAlignMPESecond>5</NetworkMonitorAlignMPESecond>
+    <NetworkMonitorUploadAppTopCount>5</NetworkMonitorUploadAppTopCount>
+    <BootMonitorUploadOneDayFirewallInfo>1</BootMonitorUploadOneDayFirewallInfo>
+    <BootMonitorUploadOneDayWakeupInfo>1</BootMonitorUploadOneDayWakeupInfo>
+    <BootMonitorUploadScreenOffRstAndWakeupInfo>1</BootMonitorUploadScreenOffRstAndWakeupInfo>
+
+    <InternalBlackList>
+        <App name="com.tencent.mm" allow="1"/>
+        <App name="com.tencent.mm:999" allow="1"/>
+    </InternalBlackList>
+
+    <BlackListRSTWhiteList>
+        <App name="com.qiyi.video" />
+        <App name="com.tencent.qqlive" />
+        <App name="com.ss.android.article.video" />
+        <App name="com.ss.android.ugc.aweme" />
+        <App name="com.smile.gifmaker" />
+        <App name="com.android.browser" />
+        <App name="com.UCMobile" />
+        <App name="com.baidu.searchbox" />
+        <App name="com.tencent.tmgp.sgame" />
+        <App name="com.tencent.tmgp.pubgmhd" />
+        <App name="com.kugou.android" />
+        <App name="com.kmxs.reader" />
+        <App name="com.taobao.taobao" />
+        <App name="com.xunmeng.pinduoduo" />
+        <App name="com.ss.android.article.lite" />
+        <App name="com.jifen.qukan" />
+        <App name="com.autonavi.minimap" />
+        <App name="com.zhihu.android" />
+        <App name="tv.danmaku.bili" />
+        <App name="com.baidu.homework" />
+        <App name="com.ss.android.article.news" />
+        <App name="com.kuaishou.nebula" />
+        <App name="com.ss.android.ugc.aweme.lite" />
+        <App name="com.tencent.news" />
+        <App name="com.youku.phone" />
+        <App name="ctrip.android.view" />
+        <App name="com.taobao.idlefish" />
+        <App name="com.youdao.course" />
+        <App name="com.sankuai.meituan" />
+        <App name="com.tencent.karaoke" />
+        <App name="me.ele" />
+        <App name="com.ss.android.ugc.live" />
+        <App name="com.tencent.mtt" />
+        <App name="com.snda.wifilocating" />
+        <App name="com.baidu.haokan" />
+        <App name="com.le123.ysdq" />
+        <App name="com.lechuan.midunovel" />
+        <App name="com.hunantv.imgo.activity" />
+        <App name="com.immomo.momo" />
+        <App name="com.qq.reader" />
+        <App name="air.tv.douyu.android" />
+        <App name="com.xingin.xhs" />
+        <App name="com.anjuke.android.app" />
+        <App name="com.baidu.browser.apps" />
+        <App name="com.ximalaya.ting.android" />
+        <App name="com.dragon.read" />
+        <App name="com.jingdong.app.mall" />
+        <App name="com.wifi.key" />
+        <App name="com.tencent.weishi" />
+        <App name="com.tomato.bookreader" />
+        <App name="com.tencent.reading" />
+        <App name="tv.pps.mobile" />
+        <App name="com.mt.mtxx.mtxx" />
+        <App name="com.baidu.BaiduMap" />
+        <App name="com.meitu.meiyancamera" />
+        <App name="com.baidu.searchbox.lite" />
+        <App name="com.zhongduomei.rrmj.society" />
+        <App name="com.duowan.kiwi" />
+        <App name="com.taobao.live" />
+        <App name="com.geek.weather365" />
+        <App name="com.geek.zwweather" />
+        <App name="com.coloros.weather2" />
+        <App name="com.heytap.reader" />
+        <App name="com.oppo.store" />
+    </BlackListRSTWhiteList>
+</NwPower>

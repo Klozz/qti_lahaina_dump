@@ -1,0 +1,34 @@
+<NwPowerScreenOnFeature>
+    <NwPowerScreenOnVersion>20200430</NwPowerScreenOnVersion>
+
+    <BootNwPowerScreenOnNetController>1</BootNwPowerScreenOnNetController>
+
+    <ScreenOnRSTConfigSize>3</ScreenOnRSTConfigSize>
+
+    <ScreenOnRSTWhiteList>
+        <App name="com.qiyi.video" config="110" rstTimer="2D0F00"/>
+        <App name="com.tencent.qqlive" config="110" rstTimer="2D0F00"/>
+        <App name="com.ss.android.article.video" config="110" rstTimer="2D0F00"/>
+
+        <App name="com.kugou.android" config="110" rstTimer="1E0F00"/>
+
+        <App name="com.ss.android.ugc.aweme" config="110" rstTimer="1E0F00"/>
+        <App name="com.smile.gifmaker" config="110" rstTimer="1E0F00"/>
+
+        <App name="com.UCMobile" config="110" rstTimer="140F00"/>
+        <App name="com.baidu.searchbox" config="110" rstTimer="140F00"/>
+        <App name="com.kmxs.reader" config="110" rstTimer="140F00"/>
+        <App name="com.ss.android.article.lite" config="110" rstTimer="140F00"/>
+
+        <App name="com.taobao.taobao" config="110" rstTimer="2D0F00"/>
+        <App name="com.xunmeng.pinduoduo" config="110" rstTimer="2D0F00"/>
+    </ScreenOnRSTWhiteList>
+
+    <ScreenOnDefaultRstConfig>
+        <Default config="010" rstTimer="000F00"/>
+    </ScreenOnDefaultRstConfig>
+
+    <ScreenOnRSTDifferentialValue>20</ScreenOnRSTDifferentialValue>
+
+    <ScreenOnDefaultRstIgnoreRSTWL>1</ScreenOnDefaultRstIgnoreRSTWL>
+</NwPowerScreenOnFeature>

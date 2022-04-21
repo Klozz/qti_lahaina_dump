@@ -1,0 +1,5 @@
+<oplus-config>
+    <oplus-feature name="oplus.software.audio.record_channel_support"/>
+    <oplus-feature name="oplus.software.audio.internal_record_support"/>
+    <oplus-feature name="oplus.software.audio.magicvoice_loopback_support"/>
+</oplus-config>

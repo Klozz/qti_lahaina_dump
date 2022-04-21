@@ -1,0 +1,5 @@
+service oplus.engineer-1-0 /odm/bin/hw/vendor-oplus-hardware-engineer@1.0-service
+    class main
+    user system
+    group system
+    interface vendor.oplus.hardware.engineer@1.0::IEngineer default

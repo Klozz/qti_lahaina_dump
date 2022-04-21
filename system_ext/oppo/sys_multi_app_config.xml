@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configVersion name="2020.05.9" number="20200509">
+    <maxNum name="2" />
+    <related>
+        <item name="android" />
+        <item name="com.google.android.gms" />
+        <item name="com.google.android.gsf" />
+        <item name="com.google.android.ext.services" />
+        <item name="com.google.android.webview" />
+        <item name="com.google.android.permissioncontroller" />
+        <item name="com.android.permissioncontroller" />
+        <item name="com.android.webview" />
+        <item name="com.coloros.securitypermission" />
+        <item name="com.facebook.services" />
+        <item name="com.facebook.system" />
+        <item name="com.facebook.appmanager" />
+        <item name="com.android.providers.media" />
+        <item name="com.android.providers.media.module" />
+        <item name="com.google.android.providers.media.module" />
+    </related>
+
+    <allowed>
+        <item name="com.tencent.mm" />
+        <item name="com.tencent.mobileqq" />
+        <item name="com.sina.weibo" />
+        <item name="com.taobao.taobao" />
+        <item name="jp.naver.line.android" />
+        <item name="com.facebook.orca" />
+        <item name="com.whatsapp" />
+        <item name="com.bbm" />
+        <item name="com.viber.voip" />
+        <item name="com.imo.android.imoim" />
+        <item name="com.instagram.android" />
+        <item name="org.telegram.messenger" />
+        <item name="com.skype.raider" />
+        <item name="com.zing.zalo" />
+        <item name="com.facebook.katana" />
+        <item name="com.bsb.hike" />
+    </allowed>
+
+    <chooseRecentTask>
+        <item name = "com.sina.weibo/.wxapi.WXEntryActivity" />
+        <item name = "com.tencent.mobileqq/.wxapi.WXEntryActivity" />
+        <item name = "com.tencent.mm/.plugin.webview.ui.tools.QQCallbackUI" />
+        <item name = "com.taobao.taobao/com.taobao.login4android.activity.AlipaySSOResultActivity" />
+        <item name = "com.taobao.taobao/.apshare.ShareEntryActivity" />
+        <item name = "com.taobao.taobao/.weibo.WeiboShareActivity" />
+    </chooseRecentTask>
+
+    <chooseSkipChoose>
+        <pkg name="*" >
+            <item name = "com.sina.weibo/com.taobao.share.view.WeiboShareActivity" />
+            <item name = "com.sina.weibo/.composerinde.ComposerDispatchActivity" />
+        </pkg>
+    </chooseSkipChoose>
+
+    <crossAuthority>
+        <item name="media" />
+        <item name="mms" />
+        <item name="downloads" />
+        <item name="settings" />
+        <item name="com.android.calendar" />
+        <item name="com.android.contacts" />
+        <item name="com.android.badge" />
+        <item name="contacts;com.android.contacts" />
+        <item name="com.android.contacts.files" />
+        <item name="com.android.externalstorage.documents" />
+        <item name="com.android.providers.media.documents" />
+        <item name="com.google.android.apps.photos.contentprovider" />
+        <item name="com.google.android.apps.docs.storage" />
+        <item name="com.sina.weibo.sdkProvider" />
+    </crossAuthority>
+
+</configVersion>

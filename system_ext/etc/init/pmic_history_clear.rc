@@ -1,0 +1,8 @@
+on property:sys.boot_completed=1
+    start clear_pmic_history
+
+service clear_pmic_history /system_ext/bin/PmicHistoryClear
+    class core
+    user root
+    disabled
+    oneshot

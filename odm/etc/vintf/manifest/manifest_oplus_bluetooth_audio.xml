@@ -1,0 +1,12 @@
+<manifest version="1.0" type="device">
+    <!-- zhangjinkang@oppo.com added for bluetooth audio -->
+    <hal format="hidl">
+        <name>vendor.oplus.hardware.bluetooth_audio</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOBluetoothAudio</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

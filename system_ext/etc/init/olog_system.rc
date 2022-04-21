@@ -1,0 +1,60 @@
+##################################################################################
+### Copyright 2014 OPPO Mobile Comm Corp., Ltd.
+### All rights reserved.
+###
+### Description     : Provide a function to critical service
+### History          :( ID, Date, Author, Description)
+### Author: Chunbo.Gao@ANDROID.DEBUG
+##################################################################################
+
+service transfer_log /system/system_ext/bin/autochmod.sh "tranfer2"
+    class core
+    user root
+    group root system bluetooth wifi everybody log
+    disabled
+    oneshot
+
+#ifdef OPLUS_FEATURE_PERFORMANCE
+#LiLeYang@ANDROID.PERFORMANCE, 2020/06/17, add for oppo perfettod trace
+service perfettostart /system/system_ext/bin/oplus_log_performance.sh "perfettostart"
+    class core
+    user root
+    group root system shell everybody sdcard_rw log
+    disabled
+    oneshot
+
+service perfettostop /system/system_ext/bin/oplus_log_performance.sh "perfettostop"
+    class core
+    user root
+    group root system shell everybody sdcard_rw log
+    disabled
+    oneshot
+#endif /* OPLUS_FEATURE_PERFORMANCE */
+
+service transfer_system /system/system_ext/bin/autochmod.sh "testtransfersystem"
+    class core
+    user system
+    group root system wifi sdcard_rw
+    disabled
+    oneshot
+
+service transfer_root /system/system_ext/bin/autochmod.sh "testtransferroot"
+    class core
+    user root
+    group root system shell everybody sdcard_rw log ext_data_rw
+    disabled
+    oneshot
+
+service transfer_mtklog /system/system_ext/bin/autochmod.sh "transfermtklog"
+    class core
+    user root
+    group root system shell everybody log cache radio bluetooth wifi sdcard_rw
+    disabled
+    oneshot
+
+service transfer_data_vendor /system/system_ext/bin/autochmod.sh "transfer_data_vendor"
+    class core
+    user root
+    group root system everybody media_rw sdcard_rw ext_data_rw
+    disabled
+    oneshot

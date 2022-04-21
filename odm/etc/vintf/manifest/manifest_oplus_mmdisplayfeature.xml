@@ -1,0 +1,12 @@
+<manifest version="1.0" type="device">
+    <!-- ZhangLiangliang@MULTIMEDIA.DISPLAY.POSTPROCESS, 2020/03/24, Add for oppo display hal -->
+    <hal format="hidl">
+        <name>vendor.oplus.hardware.mmdisplayfeature</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMMDisplayFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

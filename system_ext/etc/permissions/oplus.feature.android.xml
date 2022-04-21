@@ -1,0 +1,5 @@
+<oplus-config>
+   <!-- FuJinzhi@ANDROID.FRAMEWORK, 2020/06/13, Add for demo oplus feature -->
+  <oplus-feature name="oplus.hardware.test_system" />
+  <oplus-feature name="oplus.software.test_system" />
+</oplus-config>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+每一个完整的热点包含在一个AccessPoint标签内，配置的要求如下：
+- WifiConfiguration(必须)
+    - SSID(必须)：预置热点的SSID；
+    - keyMgmt(必须)：预置热点的加密方式，可以填写WPA_EAP或者NONE；
+    - eapConfig(可选)：热点的EAP方法，如果keyMgmt是WPA_EAP，必须填写eapConfig，可以填写SIM, AKA或AKA_PRIME；
+    - hidden(可选)：表示热点是否是隐藏的，可以填写1或者0，默认是0；
+    - enabled(可选)：表示热点是否需要被默认禁用，可以填写1或者0，默认是1；
+- PreCondition(必须)
+    - requiredProp或requiredFeature(必须)：指定的系统属性或feature，有系统属性满足要求时，热点才会被真正添加。对于每一个AccessPoint，至少填写一个requiredProp或requiredFeature，否则热点永远不会被预置。每一个requiredProp包含两个attributes，分别是prop（系统属性的名字）和value（系统属性的值），每一个requiredFeature包含一个attribute，即feature（feature名字）；
+    - requiredPropAndFeatureLogic(可选)：当包含多个requiredProp或requiredFeature时，需要包含requiredPropAndFeatureLogic，表示各个requiredProp和requiredFeature的计算方式。requiredPropAndFeatureLogic仅包含一个attribute即logic，可以填写and或or，默认为or；
+    - recheckIntent（可选）：指定的Intent，当收到对应广播，且extra满足要求时，才会对本AccessPoint发起检查。包含1个必选attribute：intentAction（Intent的标志），另外，还可以同时包含intentIntExtra（需要检查的int类型的extra），intentIntExtraDefaultValue（int类型的extra不存在时extra的默认值）和intentIntExtraExpectedValue（int类型的extra的目标value），或者同时包含intentStringExtra（需要检查的String类型的extra）和intentStringExtraExpectedValue（String类型的extra的目标value）。一个recheckIntent最多只能配置一个extra，如果int类型的extra被配置了，String类型的extra就不会生效了。如果没有配置任何extra，当收到intent时就会直接检查对应的热点。（注意：不论recheckIntent是否被配置，手机都会在boot complete的时候，对所有热点发起一次检查）
+    - requiredSimOperator(可选)：指定的SIM卡，某些虚拟运营商要求只有特定的SIM卡插入后，才需要预置热点。每一个requiredSimOperator包含一个attribute：mccmnc（MCC和MNC的组合）。
+
+e.g.
+<AccessPoint>
+	<WifiConfiguration>
+		<SSID>Test AKA</SSID>
+		<keyMgmt>WPA_EAP</keyMgmt>
+		<eapConfig>AKA</eapConfig>
+		<hidden>0</hidden>
+	</WifiConfiguration>
+	<PreCondition>
+		<requiredProp prop="persist.oppo.wifi.test1" value="1"/>
+		<requiredProp prop="persist.oppo.wifi.test2" value="1"/>
+		<requiredPropAndFeatureLogic logic="and"/>
+		<recheckIntent intentAction="oppo.wifi.test"/>
+		<recheckIntent intentAction="android.net.wifi.WIFI_STATE_CHANGED" intentIntExtra="wifi_state" intentIntExtraDefaultValue="4" intentIntExtraExpectedValue="3"/>
+	</PreCondition>
+</AccessPoint>
+
+<AccessPoint>
+	<WifiConfiguration>
+		<SSID>Test Open</SSID>
+		<keyMgmt>NONE</keyMgmt>
+		<eapConfig></eapConfig>
+		<hidden>0</hidden>
+	</WifiConfiguration>
+	<PreCondition>
+		<requiredProp prop="persist.oppo.wifi.test1" value="1"/>
+		<requiredProp prop="persist.oppo.wifi.test2" value="1"/>
+		<requiredPropAndFeatureLogic logic="or"/>
+		<recheckIntent intentAction="oppo.wifi.test"/>
+		<recheckIntent intentAction="android.net.wifi.WIFI_STATE_CHANGED" intentIntExtra="wifi_state" intentIntExtraDefaultValue="4" intentIntExtraExpectedValue="3"/>
+		<requiredSimOperator mccmnc="23410"/>
+	</PreCondition>
+</AccessPoint>
+
+////////////////////
+
+Revision History:
+<author>                        <data>       <version>   <desc>
+Haitao.Jiang@PSW.CN.WiFi.Operator.2528126    2019-12-13    1.0    wifi_operator_preset_ap_list.xml initial implementation
+Haitao.Jiang@PSW.CN.WiFi.Operator.2528126    2019-12-18    1.0    Add ro.vendor.oplus.operator judge for Telekom_SIM
+Haitao.Jiang@PSW.CN.WiFi.Operator.2056392    2019-12-25    1.0    Add SSID "Wifi Extra"
+Haitao.Jiang@PSW.CN.WiFi.Operator.2677666    2020-03-24    1.0    Add CPW preset access point and add support for "requiredSimOperator"
+JiangHaitao@CONNECTIVITY.WIFI.CUSTOMIZE.OPERATOR    2020-05-12    2.0    Decoupling for Android R
+
+-->
+<WifiOperatorPresetApList>
+
+<AccessPoint>
+	<WifiConfiguration>
+		<SSID>Telekom_SIM</SSID>
+		<keyMgmt>WPA_EAP</keyMgmt>
+		<eapConfig>AKA</eapConfig>
+		<hidden>0</hidden>
+	</WifiConfiguration>
+	<PreCondition>
+		<requiredFeature feature="oplus.software.wlan.operator_preset_tmobile"/>
+		<requiredProp prop="persist.sys.oplus.operator.opta" value="TMOBILE"/>
+		<requiredProp prop="persist.sys.oplus.operator.optb" value="DE"/>
+		<requiredPropAndFeatureLogic logic="and"/>
+		<recheckIntent intentAction="android.net.wifi.WIFI_STATE_CHANGED" intentIntExtra="wifi_state" intentIntExtraDefaultValue="4" intentIntExtraExpectedValue="3"/>
+		<recheckIntent intentAction="oppo.intent.action.OPLUS_START_CUSTOMIZE"/>
+	</PreCondition>
+</AccessPoint>
+
+<AccessPoint>
+	<WifiConfiguration>
+		<SSID>Wifi Extra</SSID>
+		<keyMgmt>WPA_EAP</keyMgmt>
+		<eapConfig>SIM</eapConfig>
+		<hidden>0</hidden>
+	</WifiConfiguration>
+	<PreCondition>
+		<requiredFeature feature="oplus.software.wlan.o2_preset"/>
+		<recheckIntent intentAction="android.net.wifi.WIFI_STATE_CHANGED" intentIntExtra="wifi_state" intentIntExtraDefaultValue="4" intentIntExtraExpectedValue="3"/>
+		<recheckIntent intentAction="android.intent.action.SIM_STATE_CHANGED" intentStringExtra="ss" intentStringExtraExpectedValue="LOADED"/>
+		<requiredSimOperator mccmnc="23410"/>
+	</PreCondition>
+</AccessPoint>
+
+</WifiOperatorPresetApList>

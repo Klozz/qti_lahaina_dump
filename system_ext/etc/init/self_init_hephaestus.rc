@@ -1,0 +1,28 @@
+service hephaestus /system_ext/bin/hephaestus
+    seclabel u:r:hephaestus:s0
+    class late_start
+    user system
+    group system root media_rw
+    oneshot
+    disabled
+
+on property:oppo.sau.hephaestus=1
+    start hephaestus
+
+on property:oppo.sau.hephaestus=0
+    stop hephaestus
+
+service hephaestus_install /system_ext/bin/hephaestus installd
+    seclabel u:r:installd:s0
+    class late_start
+    user root
+    group system root media_rw
+    oneshot
+    disabled
+
+on property:oppo.sau.hephaestus_install=1
+    start hephaestus_install
+
+on property:oppo.sau.hephaestus_install=0
+    stop hephaestus_install
+

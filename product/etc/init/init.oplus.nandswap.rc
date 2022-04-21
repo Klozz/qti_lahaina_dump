@@ -1,0 +1,29 @@
+service init.oplus.nandswap.sh /product/bin/init.oplus.nandswap.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1 && property:persist.sys.oplus.nandswap.condition=true
+    restorecon_recursive /data/nandswap
+    exec - root system -- /bin/rm -rf /data/nandswap
+    mkdir /data/nandswap 0700 root root encryption=Require key=per_boot_ref
+
+    start init.oplus.nandswap.sh
+
+    chown root system /proc/nandswap/swap_ctl
+    chmod 0660 /proc/nandswap/swap_ctl
+    chown root system /proc/nandswap/fn_enable
+    chmod 0660 /proc/nandswap/fn_enable
+
+    chown root system /proc/nandswap/life_protect
+    chmod 0440 /proc/nandswap/life_protect
+    chown root system /proc/nandswap/stat_info
+    chmod 0440 /proc/nandswap/stat_info
+
+    chmod 0200 /proc/nandswap/swap_limit
+    chmod 0200 /proc/nandswap/dev_life
+
+on property:sys.boot_completed=1 && property:persist.sys.oplus.nandswap.condition=false
+    restorecon_recursive /data/nandswap
+    exec - root system -- /bin/rm -rf /data/nandswap

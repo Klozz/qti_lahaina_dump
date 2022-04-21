@@ -1,0 +1,190 @@
+<!--
+  Copyright (c) 2019 OPPO Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - OPPO Technologies, Inc.
+-->
+<!--
+CameraEngmodeConfig :
+    This node must be added for each module prosent in the device.
+    It contain all information about the module present.
+    The number of nodes of CameraEngmodeConfig indicate number of modules
+    to be probed on the device.
+    Maximum number of CameraEngmodeConfig nodes is 10
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<CameraEngmodeRoot>
+  <CameraEngmodeConfig>
+    <CameraId>0</CameraId>
+    <SensorName>imx682</SensorName>
+    <EepromName>imx682_p24c128e</EepromName>
+    <isAvailable>true</isAvailable>
+    <OisCalib>
+      <xGyroOffsetAddr>0x8455</xGyroOffsetAddr>
+      <yGyroOffsetAddr>0x8456</yGyroOffsetAddr>
+      <xGyroOffsetCalibAddr>0x8406</xGyroOffsetCalibAddr>
+      <yGyroOffsetCalibAddr>0x8486</yGyroOffsetCalibAddr>
+      <regAddrType>2</regAddrType>
+      <regDataType>2</regDataType>
+    </OisCalib>
+    <eepromCalib>
+      <isAvailable>true</isAvailable>
+      <MWdata>
+        <devIndex>10</devIndex>
+        <isWRP>0x1</isWRP>
+        <isAvailable>true</isAvailable>
+        <dataAddress>0x3400</dataAddress>
+        <offset>0x3400</offset>
+        <dataSize>1689</dataSize>
+        <!--first byte128-->
+        <Head1Src>0</Head1Src>
+        <Head1Dst>0</Head1Dst>
+        <Head1Size>128</Head1Size>
+        <!--second byte40-->
+        <Head2Src>128</Head2Src>
+        <Head2Dst>128</Head2Dst>
+        <Head2Size>40</Head2Size>
+        <!--internalPara main-->
+        <MainParamSrc>168</MainParamSrc>
+        <MainParamDst>168</MainParamDst>
+        <MainParamSize>1517</MainParamSize>
+        <!--internalPara aux-->
+        <AuxParamSrc>0</AuxParamSrc>
+        <AuxParamDst>0</AuxParamDst>
+        <AuxParamSize>0</AuxParamSize>
+        <!--externalPara-->
+        <extParamSrc>0</extParamSrc>
+        <extParamDst>0</extParamDst>
+        <extParamSize>0</extParamSize>
+        <!--endPara-->
+        <EndParamSrc>1685</EndParamSrc>
+        <EndParamDst>3226</EndParamDst>
+        <EndParamSize>4</EndParamSize>
+      </MWdata>
+      <MTdata>
+        <devIndex>10</devIndex>
+        <isWRP>0x1</isWRP>
+        <isAvailable>false</isAvailable>
+        <dataAddress>0x31C0</dataAddress>
+        <offset>0x31C0</offset>
+        <dataSize>1685</dataSize>
+        <!--first byte128-->
+        <Head1Src>0</Head1Src>
+        <Head1Dst>0</Head1Dst>
+        <Head1Size>128</Head1Size>
+        <!--second byte40-->
+        <Head2Src>128</Head2Src>
+        <Head2Dst>128</Head2Dst>
+        <Head2Size>40</Head2Size>
+        <!--internalPara main-->
+        <MainParamSrc>168</MainParamSrc>
+        <MainParamDst>168</MainParamDst>
+        <MainParamSize>1517</MainParamSize>
+        <!--internalPara aux-->
+        <AuxParamSrc>0</AuxParamSrc>
+        <AuxParamDst>0</AuxParamDst>
+        <AuxParamSize>0</AuxParamSize>
+        <!--externalPara-->
+        <extParamSrc>0</extParamSrc>
+        <extParamDst>0</extParamDst>
+        <extParamSize>0</extParamSize>
+        <!--endPara-->
+        <EndParamSrc>0</EndParamSrc>
+        <EndParamDst>0</EndParamDst>
+        <EndParamSize>0</EndParamSize>
+      </MTdata>
+      <AEsyncdata>
+        <devIndex>10</devIndex>
+        <isWRP>0x1</isWRP>
+        <isAvailable>false</isAvailable>
+        <dataAddress>0x3880</dataAddress>
+        <offset>0x3880</offset>
+        <dataSize>36</dataSize>
+      </AEsyncdata>
+      <SN>
+        <devIndex>0x01</devIndex>
+        <isWRP>0</isWRP>
+        <isAvailable>true</isAvailable>
+        <dataAddress>0x00B0</dataAddress>
+        <offset>0x00B0</offset>
+        <dataSize>17</dataSize>
+      </SN>
+      <Distortiondata>
+        <devIndex>10</devIndex>
+        <isWRP>0</isWRP>
+        <isAvailable>false</isAvailable>
+        <dataAddress>0x2600</dataAddress>
+        <dataSize>36</dataSize>
+      </Distortiondata>
+	</eepromCalib>
+  </CameraEngmodeConfig>
+  <CameraEngmodeConfig>
+    <CameraId>1</CameraId>
+    <SensorName>hi846</SensorName>
+    <EepromName>hi846_sunny_cat24s128</EepromName>
+    <isAvailable>true</isAvailable>
+    <eepromCalib>
+      <isAvailable>true</isAvailable>
+      <MWdata>
+        <devIndex>11</devIndex>
+        <isWRP>0x1</isWRP>
+        <isAvailable>true</isAvailable>
+        <dataAddress>0x1A40</dataAddress>
+        <offset>0x1A40</offset>
+        <dataSize>1545</dataSize>
+        <!--first byte128-->
+        <Head1Src>0</Head1Src>
+        <Head1Dst>0</Head1Dst>
+        <Head1Size>0</Head1Size>
+        <!--second byte40-->
+        <Head2Src>0</Head2Src>
+        <Head2Dst>0</Head2Dst>
+        <Head2Size>0</Head2Size>
+        <!--internalPara main-->
+        <MainParamSrc>0</MainParamSrc>
+        <MainParamDst>0</MainParamDst>
+        <MainParamSize>0</MainParamSize>
+        <!--internalPara aux-->
+        <AuxParamSrc>0</AuxParamSrc>
+        <AuxParamDst>1685</AuxParamDst>
+        <AuxParamSize>1517</AuxParamSize>
+        <!--externalPara-->
+        <extParamSrc>1517</extParamSrc>
+        <extParamDst>3202</extParamDst>
+        <extParamSize>24</extParamSize>
+      </MWdata>
+      <MTdata>
+          <devIndex>11</devIndex>
+          <isWRP>0x1</isWRP>
+          <isAvailable>false</isAvailable>
+          <dataAddress>0x540</dataAddress>
+          <offset>0x540</offset>
+          <dataSize>1561</dataSize>
+      </MTdata>
+      <AEsyncdata>
+          <devIndex>11</devIndex>
+          <isWRP>0x1</isWRP>
+          <isAvailable>false</isAvailable>
+          <dataAddress>0x3240</dataAddress>
+          <offset>0x3240</offset>
+          <dataSize>36</dataSize>
+      </AEsyncdata>
+      <SN>
+          <devIndex>0x02</devIndex>
+          <isWRP>0</isWRP>
+          <isAvailable>true</isAvailable>
+          <dataAddress>0x00B0</dataAddress>
+          <offset>0x00B0</offset>
+          <dataSize>17</dataSize>
+      </SN>
+      <Distortiondata>
+          <devIndex>11</devIndex>
+          <isWRP>0</isWRP>
+          <isAvailable>true</isAvailable>
+          <dataAddress>0x0CA0</dataAddress>
+          <offset>0x0CA0</offset>
+          <dataSize>3441</dataSize>
+      </Distortiondata>
+    </eepromCalib>
+  </CameraEngmodeConfig>
+
+</CameraEngmodeRoot>

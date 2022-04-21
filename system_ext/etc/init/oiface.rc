@@ -1,0 +1,22 @@
+service oiface /system_ext/bin/oiface
+	class hal
+	user system
+	group system readproc root
+	capabilities SYS_NICE
+	disabled
+
+on init
+    chmod 0755 /dev/cpuset
+    chown system system /dev/stune/top-app/schedtune.boost
+    chmod 0664 /dev/stune/top-app/schedtune.boost
+    chown system system /dev/cpuctl/top-app/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.min
+
+on property:sys.boot_completed=1 && property:persist.sys.oiface.enable=0
+	stop oiface
+
+on property:sys.boot_completed=1 && property:persist.sys.oiface.enable=1
+	start oiface
+
+on property:sys.boot_completed=1 && property:persist.sys.oiface.enable=2
+	start oiface

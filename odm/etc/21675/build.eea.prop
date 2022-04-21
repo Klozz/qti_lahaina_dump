@@ -1,0 +1,70 @@
+
+# InitEnv
+
+# Build.java
+ro.build.id=RKQ1.210408.001
+ro.product.manufacturer=realme
+ro.product.brand=realme
+ro.product.model=RMX3360
+ro.product.name=RMX3360EEA
+ro.product.device=RE54ABL1
+ro.product.first_api_level=30
+ro.build.version.incremental=1620037230588
+ro.build.version.release=11
+ro.build.fingerprint=realme/RMX3360EEA/RE54ABL1:11/RKQ1.210408.001/1620037230588:user/release-keys
+ro.odm.build.fingerprint=realme/RMX3360EEA/RE54ABL1:11/RKQ1.210408.001/1620037230588:user/release-keys
+ro.odm.build.version.incremental=1620037230588
+ro.product.odm.brand=realme
+ro.product.odm.manufacturer=realme
+ro.product.odm.model=RMX3360
+ro.product.odm.device=RE54ABL1
+ro.product.odm.name=RMX3360EEA
+ro.odm.build.date=Tue Dec 21 18:09:32 CST 2021
+ro.odm.build.date.utc=1640081372
+ro.system.build.fingerprint=realme/RMX3360EEA/RE54ABL1:11/RKQ1.210408.001/1620037230588:user/release-keys
+ro.system.build.version.incremental=1620037230588
+ro.product.system.brand=realme
+ro.product.system.manufacturer=realme
+ro.product.system.model=RMX3360
+ro.product.system.device=RE54ABL1
+ro.product.system.name=RMX3360EEA
+ro.system.build.date=Tue Dec 21 18:09:32 CST 2021
+ro.system.build.date.utc=1640081372
+ro.bootimage.build.fingerprint=realme/RMX3360EEA/RE54ABL1:11/RKQ1.210408.001/1620037230588:user/release-keys
+ro.bootimage.build.version.incremental=1620037230588
+ro.product.bootimage.brand=realme
+ro.product.bootimage.manufacturer=realme
+ro.product.bootimage.model=RMX3360
+ro.product.bootimage.device=RE54ABL1
+ro.product.bootimage.name=RMX3360EEA
+ro.bootimage.build.date=Tue Dec 21 18:09:32 CST 2021
+ro.bootimage.build.date.utc=1640081372
+ro.vendor.build.fingerprint=realme/RMX3360EEA/RE54ABL1:11/RKQ1.210408.001/1620037230588:user/release-keys
+ro.vendor.build.version.incremental=1620037230588
+ro.product.vendor.brand=realme
+ro.product.vendor.manufacturer=realme
+ro.product.vendor.model=RMX3360
+ro.product.vendor.device=RE54ABL1
+ro.product.vendor.name=RMX3360EEA
+ro.vendor.build.date=Tue Dec 21 18:09:32 CST 2021
+ro.vendor.build.date.utc=1640081372
+ro.system_ext.build.fingerprint=realme/RMX3360EEA/RE54ABL1:11/RKQ1.210408.001/1620037230588:user/release-keys
+ro.system_ext.build.version.incremental=1620037230588
+ro.product.system_ext.brand=realme
+ro.product.system_ext.manufacturer=realme
+ro.product.system_ext.model=RMX3360
+ro.product.system_ext.device=RE54ABL1
+ro.product.system_ext.name=RMX3360EEA
+ro.system_ext.build.date=Tue Dec 21 18:09:32 CST 2021
+ro.system_ext.build.date.utc=1640081372
+ro.product.build.fingerprint=realme/RMX3360EEA/RE54ABL1:11/RKQ1.210408.001/1620037230588:user/release-keys
+ro.product.build.version.incremental=1620037230588
+ro.product.product.brand=realme
+ro.product.product.manufacturer=realme
+ro.product.product.model=RMX3360
+ro.product.product.device=RE54ABL1
+ro.product.product.name=RMX3360EEA
+ro.product.build.date=Tue Dec 21 18:09:32 CST 2021
+ro.product.build.date.utc=1640081372
+
+# OPPO

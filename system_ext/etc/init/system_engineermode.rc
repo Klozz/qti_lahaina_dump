@@ -1,0 +1,77 @@
+
+on boot
+    symlink /mnt/vendor/persist /storage/persist
+
+on post-fs-data
+    mkdir /data/engineermode
+    chown system system /data/engineermode
+    chmod 0775 /data/engineermode
+    mkdir /data/engineercamera
+    chown system system /data/engineercamera
+    chmod 0775 /data/engineercamera
+    mkdir /data/theme_bak
+    chown system system /data/theme_bak
+    chmod 0777 /data/theme_bak
+    chown system system /cache/factory/sbl_memtest_result.txt
+    chown system system /cache/factory/dram_aging_user_result.txt
+    chown system system /cache/factory/flash_aging_result.txt
+
+service switchByMC /system/bin/sh /system/system_ext/bin/engineer_system_shell.sh switchEng
+    user root
+    group root system
+    disabled
+    oneshot
+    seclabel u:r:engineer_system_daemon:s0
+
+on property:vendor.oppo.engineer.adb.flag=*
+    start switchByMC
+
+service cpustressAging /system/bin/sh /system/system_ext/bin/engineer_system_shell.sh startCpustressAging
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:engineer_system_daemon:s0
+
+service cacheAging /system/bin/sh /system/system_ext/bin/engineer_system_shell.sh startCacheAging
+    user root
+    disabled
+    oneshot
+    seclabel u:r:engineer_system_daemon:s0
+
+#Add for set media.stagefright.audio.deep(default_prop) in mmi speaker test
+on property:sys.media.stagefright.audio.deep=true
+    setprop media.stagefright.audio.deep true
+
+on property:sys.media.stagefright.audio.deep=false
+    setprop media.stagefright.audio.deep false
+
+on property:persist.vendor.otg.switch=true
+    write /sys/class/power_supply/usb/otg_switch 1
+    write /sys/class/oplus_chg/usb/otg_switch 1
+
+on property:persist.vendor.otg.switch=false
+    write /sys/class/power_supply/usb/otg_switch 0
+    write /sys/class/oplus_chg/usb/otg_switch 0
+
+on property:vendor.oppo.engineermode.chargeswitch=true
+    write /sys/class/power_supply/battery/mmi_charging_enable 1
+    write /sys/class/oplus_chg/battery/mmi_charging_enable 1
+
+on property:vendor.oppo.engineermode.chargeswitch=false
+    write /sys/class/power_supply/battery/mmi_charging_enable 0
+    write /sys/class/oplus_chg/battery/mmi_charging_enable 0
+
+on property:vendor.oppo.vulkan.switch=*
+    setprop persist.graphics.vulkan.disable ${vendor.oppo.vulkan.switch}
+
+on property:vendor.oppo.engineer.usb.config=*
+    setprop persist.vendor.usb.config ${vendor.oppo.engineer.usb.config}
+    setprop persist.sys.usb.config ${vendor.oppo.engineer.usb.config}
+
+service AccessCpuInfo /system/bin/sh /system/system_ext/bin/engineer_system_shell.sh accessCpuInfo
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:engineer_system_daemon:s0

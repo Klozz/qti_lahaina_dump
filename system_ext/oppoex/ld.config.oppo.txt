@@ -1,0 +1,16 @@
+# install at "/system_ext/oppoex/" dir
+[system]
+#support load priority,higher -> low
+paths = /my_company/${LIB}/oppoex
+paths += /my_carrier/${LIB}/oppoex
+paths += /my_region/${LIB}/oppoex
+paths += /my_product/${LIB}/oppoex
+paths += /system_ext/${LIB}/oppoex
+paths += /system/${LIB}/oppoex
+
+default.shared_libs = %/system/etc/public.libraries.txt%:%/apex/com.android.vndk.v${VER}/etc/llndk.libraries.${VER}.txt%:%/system_ext/oppoex/public.libraries-oppoex.txt%
+vndk.shared_libs = %/apex/com.android.vndk.v${VER}/etc/vndksp.libraries.${VER}.txt%
+sphal.shared_libs = %/vendor/etc/public.libraries.txt%
+
+[vendor]
+# library of oppo extend install at the path which default space of vendor driver can find.

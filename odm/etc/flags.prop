@@ -1,0 +1,144 @@
+# Copyright 2019-2029 OPPO Mobile Comm Corp., Ltd.
+# All rights reserved.
+#
+# File: - flags.prop
+# Description :
+#     operator&region flag mapping list,this file will be compiled into /odm/etc/flags.prop
+#
+# Version: 1.0
+# Date: 2020-07-23
+# Author: yuanhuan@oppo.com
+# TAG: OPLUS_FEATURE_CTS_FINGERPRINT
+# ------------------------------- Revision History: ----------------------------
+# <author>                        <data>       <version>    <desc>
+# ------------------------------------------------------------------------------
+# yuanhuan@oppo.com               2020/07/23   1.0
+#
+
+# operator
+00010010=ph-globe
+00010101=ke-safaricom
+00010110=ph-smart-simlock
+00010111=ph-smart
+00011111=au-optus
+00100000=au-optus-simlock
+00100001=au-telstra
+00100010=au-vodafone
+00101011=au-virgin
+00110100=jp-softbank
+00110101=th-true
+00110110=th-ais
+01000101=th-dtac
+01000110=es-movistar
+01000111=au-telstra_prepaid
+01001000=au-vodafone_prepaid
+01001001=au-virgin_prepaid
+01001010=fr-orange
+01001011=au-optus_prepaid
+01001100=au-telstra_postpaid
+01001101=au-vodafone_postpaid
+01001110=au-virgin_postpaid
+01001111=au-optus_postpaid
+01010000=it-vodafone_euex
+01010010=nl-vodafone_euex
+01010011=ro-vodafone_eea
+01010100=jp-uqmobile
+01010111=euex-orange
+01011011=gb-vodafone_euex
+01011100=es-vodafone_euex
+01011101=de-vodafone_euex
+01011110=gb-ee
+01011111=ch-swisscom
+01100101=es-orange
+01100110=es-telefonia
+01100111=fr-bouygue
+01101000=nl-tmobile
+01101011=it-tim
+01101100=jp-rakuten
+01101101=fr-orange_lite
+01110000=es-movistar_lite
+01110001=it-tim_lite
+01110011=gb-o2
+01110110=jp-ocn
+01110111=it-wind3
+01111010=mx-telcel
+01111100=ph-smart_retailer
+01111101=euex-vodafone_eea
+01111110=vodafone_noneea
+10000110=fr-altice
+10001000=de-o2
+10001001=jp-kddi
+10001010=gb-cpw
+10001011=jp-ymobile
+10001110=mx-att
+10010000=gb-3uk
+
+# region
+00000000=default
+00010001=id_3g
+00011011=in
+00011110=au
+00100111=dz
+00110011=id
+00110111=ru
+00111001=th
+00111010=mm
+00111011=jp
+00111100=vn
+00111110=ph
+00111111=kh
+01000100=euex
+01010001=euex_tr
+01010101=bd
+01010110=pk
+01011001=ng
+01011010=kz
+01100000=lk
+01100001=np
+01100010=ae
+01100011=ma
+01100100=tn
+01110100=ke
+01110101=eg
+01111011=mx
+10000010=hk
+10000011=sa
+10000101=euex_noneea
+10000111=euex_ua
+10001100=euex_dual_sim
+10001101=euex_noneea_dual_sim
+10001111=euex_ro
+
+# operator normalized
+00011010=tw-twop
+00000101=tw-fet
+00000110=tw-twm
+00111101=tw-apt
+
+00101100=sg-sgop
+00100100=sg-singtel
+00100101=sg-starhub
+00100110=sg-m1
+01101110=sg-tpg
+01101111=sg-myrepublic
+
+00101101=nz-nzop
+00101001=nz-2degrees
+01111000=nz-warehouse
+01111001=nz-skinny
+00101010=nz-spark
+10000100=nz-vodafone_nz
+
+00111000=my-myop
+01000000=my-celcom
+01000001=my-maxis
+01000010=my-digi
+
+# oneplus
+10010001=us-tmobile
+10010010=us-sprint
+10010011=us-metropcs
+10010100=us-verizon
+10010101=us-att
+
+10010110=il

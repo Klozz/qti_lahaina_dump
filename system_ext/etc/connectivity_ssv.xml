@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<connectivity_ssv>
+
+<!-- Vodafone begin -->
+<VODAFONE>
+<!-- Albania -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">AL</country_toggle_update>
+<!-- Australia -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">AU</country_toggle_update>
+<!-- Cyprus -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="on" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">CY</country_toggle_update>
+<!-- Czech Republic -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="off" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">CZ</country_toggle_update>
+<!-- Egypt -->
+<country_toggle_update wifi="" bluetooth="" nfc="" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">EG</country_toggle_update>
+<!-- Fiji -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">FJ</country_toggle_update>
+<!-- Germany -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="on" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">DE</country_toggle_update>
+<!-- Ghana -->
+<country_toggle_update wifi="" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">GH</country_toggle_update>
+<!-- Greece -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">GR</country_toggle_update>
+<!-- Hungary -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">HU</country_toggle_update>
+<!-- Iceland -->
+<country_toggle_update wifi="on" bluetooth="" nfc="on" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">IS</country_toggle_update>
+<!-- India -->
+<country_toggle_update wifi="" bluetooth="" nfc="" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">IN</country_toggle_update>
+<!-- Ireland -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">IE</country_toggle_update>
+<!-- Italy -->
+<country_toggle_update wifi="" bluetooth="" nfc="" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">IT</country_toggle_update>
+<!-- Kenya -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="on" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">KE</country_toggle_update>
+<!-- Lesotho -->
+<country_toggle_update wifi="on" bluetooth="on" nfc="on" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">LS</country_toggle_update>
+<!-- Malta -->
+<country_toggle_update wifi="" bluetooth="" nfc="" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">MT</country_toggle_update>
+<!-- Mozambique -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">MZ</country_toggle_update>
+<!-- Netherlands -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="on" gps="on" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">NL</country_toggle_update>
+<!-- New Zealand -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">NZ</country_toggle_update>
+<!-- Portugal -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">PT</country_toggle_update>
+<!-- Qatar -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">QA</country_toggle_update>
+<!-- Romania -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">RO</country_toggle_update>
+<!-- Solomon Islands -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">SB</country_toggle_update>
+<!-- South Africa -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="off" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">ZA</country_toggle_update>
+<!-- Spain -->
+<country_toggle_update wifi="on" bluetooth="off" nfc="on" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">ES</country_toggle_update>
+<!-- Switzerland -->
+<country_toggle_update wifi="on" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">CH</country_toggle_update>
+<!-- Taiwan -->
+<country_toggle_update wifi="off" bluetooth="off" nfc="off" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">TW</country_toggle_update>
+<!-- Tanzania -->
+<country_toggle_update wifi="" bluetooth="" nfc="" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">TZ</country_toggle_update>
+<!-- Turkey -->
+<country_toggle_update wifi="" bluetooth="" nfc="" gps="" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">TR</country_toggle_update>
+<!-- UK -->
+<country_toggle_update wifi="on" bluetooth="off" nfc="off" gps="on" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">GB</country_toggle_update>
+<!-- Ukraine -->
+<country_toggle_update wifi="on" bluetooth="off" nfc="" gps="off" wifi_tethering="" bluetooth_tethering="" wifi_scanning="">UA</country_toggle_update>
+</VODAFONE>
+<!-- Vodafone end -->
+
+<TMOBILE>
+<!-- All Countries -->
+<country_toggle_update wifi="" bluetooth="" nfc="" gps="" wifi_tethering="off" bluetooth_tethering="off" wifi_scanning="off">ALL</country_toggle_update>
+</TMOBILE>
+
+<TELE2>
+<!-- All Countries -->
+<country_toggle_update wifi="" bluetooth="" nfc="" gps="" wifi_tethering="off" bluetooth_tethering="off" wifi_scanning="off">ALL</country_toggle_update>
+</TELE2>
+
+<CS>
+<!-- All Countries -->
+<country_toggle_update wifi="" bluetooth="" nfc="" gps="" wifi_tethering="off" bluetooth_tethering="off" wifi_scanning="off">ALL</country_toggle_update>
+</CS>
+</connectivity_ssv>

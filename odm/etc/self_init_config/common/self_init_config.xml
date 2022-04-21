@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<self_init_config>
+<!-- 基础设置，跟vn相关 -->
+<base_config name="Taiwan FET" nv="00000101" >
+      <core_property
+         ro.vendor.oplus.operator="FET"
+         ro.vendor.oplus.regionmark="TW"
+       />
+      <main_property
+         persist.sys.oppo.region="TW"
+       />
+</base_config>
+
+<base_config name="Taiwan TWM" nv="00000110" >
+      <core_property
+         ro.vendor.oplus.operator="TWM"
+         ro.vendor.oplus.regionmark="TW"
+       />
+      <main_property
+         persist.sys.oppo.region="TW"
+       />
+</base_config>
+
+<base_config name="Taiwan APT" nv="00111101" >
+      <core_property
+         ro.vendor.oplus.operator="APT"
+         ro.vendor.oplus.regionmark="TW"
+       />
+      <main_property
+         persist.sys.oppo.region="TW"
+       />
+</base_config>
+
+<base_config name="Indonesia 3G" nv="00010001" >
+      <core_property
+         ro.vendor.oplus.regionmark="ID"
+       />
+</base_config>
+
+<base_config name="Philippines GLOBE" nv="00010010" >
+      <core_property
+         ro.vendor.oplus.operator="GLOBE"
+         ro.vendor.oplus.regionmark="PH"
+       />
+      <main_property
+         persist.sys.oppo.region="PH"
+       />
+</base_config>
+
+<base_config name="Kenya SAFARICOM" nv="00010101" >
+      <core_property
+         ro.vendor.oplus.operator="SAFARICOM"
+         ro.vendor.oplus.regionmark="KE"
+       />
+      <main_property
+         persist.sys.oppo.region="KE"
+       />
+</base_config>
+
+<base_config name="Philippines SMART simlock" nv="00010110" >
+      <core_property
+         ro.vendor.oplus.operator="SMART"
+         ro.vendor.oplus.regionmark="PH"
+       />
+      <main_property
+         persist.sys.oppo.region="PH"
+       />
+</base_config>
+
+<base_config name="Philippines SMART" nv="00010111" >
+      <core_property
+         ro.vendor.oplus.operator="SMART"
+         ro.vendor.oplus.regionmark="PH"
+       />
+      <main_property
+         persist.sys.oppo.region="PH"
+       />
+</base_config>
+
+<base_config name="Taiwan TWOP" nv="00011010" >
+      <core_property
+         ro.vendor.oplus.operator="TWOP"
+         ro.vendor.oplus.regionmark="TW"
+       />
+      <main_property
+         persist.sys.oppo.region="TW"
+       />
+</base_config>
+
+<base_config name="India" nv="00011011" >
+      <core_property
+         ro.vendor.oplus.regionmark="IN"
+       />
+</base_config>
+
+<base_config name="Australia" nv="00011110" >
+      <core_property
+         ro.vendor.oplus.regionmark="AU"
+       />
+</base_config>
+
+<base_config name="Australia OPTUS" nv="00011111" >
+      <core_property
+         ro.vendor.oplus.operator="OPTUS"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia OPTUS simlock" nv="00100000" >
+      <core_property
+         ro.vendor.oplus.operator="OPTUS"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia TELSTRA" nv="00100001" >
+      <core_property
+         ro.vendor.oplus.operator="TELSTRA"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia VODAFONE" nv="00100010" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia VODAFONE" nv="00100010" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Singapore" nv="00100011" >
+      <core_property
+         ro.vendor.oplus.regionmark="SG"
+       />
+</base_config>
+
+<base_config name="Singapore SINGTEL" nv="00100100" >
+      <core_property
+         ro.vendor.oplus.operator="SINGTEL"
+         ro.vendor.oplus.regionmark="SG"
+       />
+      <main_property
+         persist.sys.oppo.region="SG"
+       />
+</base_config>
+
+<base_config name="Singapore STARHUB" nv="00100101" >
+      <core_property
+         ro.vendor.oplus.operator="STARHUB"
+         ro.vendor.oplus.regionmark="SG"
+       />
+      <main_property
+         persist.sys.oppo.region="SG"
+       />
+</base_config>
+
+<base_config name="Singapore M1" nv="00100110" >
+      <core_property
+         ro.vendor.oplus.operator="M1"
+         ro.vendor.oplus.regionmark="SG"
+       />
+      <main_property
+         persist.sys.oppo.region="SG"
+       />
+</base_config>
+
+<base_config name="Algeria" nv="00100111" >
+      <core_property
+         ro.vendor.oplus.regionmark="DZ"
+       />
+</base_config>
+
+<base_config name="New Zealand 2DEGREES" nv="00101001" >
+      <core_property
+         ro.vendor.oplus.operator="2DEGREES"
+         ro.vendor.oplus.regionmark="NZ"
+       />
+      <main_property
+         persist.sys.oppo.region="NZ"
+       />
+</base_config>
+
+<base_config name="New Zealand SPARK" nv="00101010" >
+      <core_property
+         ro.vendor.oplus.operator="SPARK"
+         ro.vendor.oplus.regionmark="NZ"
+         ro.oem.key1="SPARK"
+       />
+      <main_property
+         persist.sys.oppo.region="NZ"
+       />
+</base_config>
+
+<base_config name="Australia VIRGIN" nv="00101011" >
+      <core_property
+         ro.vendor.oplus.operator="VIRGIN"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Singapore SGOP" nv="00101100" >
+      <core_property
+         ro.vendor.oplus.operator="SGOP"
+         ro.vendor.oplus.regionmark="SG"
+       />
+      <main_property
+         persist.sys.oppo.region="SG"
+       />
+</base_config>
+
+<base_config name="New Zealand NZOP" nv="00101101" >
+      <core_property
+         ro.vendor.oplus.operator="NZOP"
+         ro.vendor.oplus.regionmark="NZ"
+       />
+      <main_property
+         persist.sys.oppo.region="NZ"
+       />
+</base_config>
+
+<base_config name="Indonesia" nv="00110011" >
+      <core_property
+         ro.vendor.oplus.regionmark="ID"
+       />
+</base_config>
+
+<base_config name="Japan SOFTBANK" nv="00110100" >
+      <core_property
+         ro.vendor.oplus.operator="SOFTBANK"
+         ro.vendor.oplus.regionmark="JP"
+       />
+      <main_property
+         persist.sys.oppo.region="JP"
+       />
+</base_config>
+
+<base_config name="Thailand TRUE" nv="00110101" >
+      <core_property
+         ro.vendor.oplus.operator.device.lock="TRUE"
+         ro.vendor.oplus.operator="TRUE"
+         ro.vendor.oplus.regionmark="TH"
+       />
+</base_config>
+
+<base_config name="Thailand AIS" nv="00110110" >
+      <core_property
+         ro.vendor.oplus.operator.device.lock="AIS"
+         ro.vendor.oplus.regionmark="TH"
+       />
+</base_config>
+
+<base_config name="Russia" nv="00110111" >
+      <core_property
+         ro.vendor.oplus.regionmark="RU"
+       />
+</base_config>
+
+<base_config name="Malaysia MYOP" nv="00111000" >
+      <core_property
+         ro.vendor.oplus.operator="MYOP"
+         ro.vendor.oplus.regionmark="MY"
+       />
+      <main_property
+         persist.sys.oppo.region="MY"
+       />
+</base_config>
+
+<base_config name="Thailand" nv="00111001" >
+      <core_property
+         ro.vendor.oplus.regionmark="TH"
+       />
+</base_config>
+
+<base_config name="Myanmar" nv="00111010" >
+      <core_property
+         ro.vendor.oplus.regionmark="MM"
+       />
+</base_config>
+
+<base_config name="Japan" nv="00111011" >
+      <core_property
+         ro.vendor.oplus.regionmark="JP"
+       />
+</base_config>
+
+<base_config name="Vietnam" nv="00111100" >
+      <core_property
+         ro.vendor.oplus.regionmark="VN"
+       />
+</base_config>
+
+<base_config name="Philippines" nv="00111110" >
+      <core_property
+         ro.vendor.oplus.regionmark="PH"
+       />
+</base_config>
+
+<base_config name="Cambodia" nv="00111111" >
+      <core_property
+         ro.vendor.oplus.regionmark="KH"
+       />
+</base_config>
+
+<base_config name="Malaysia CELCOM" nv="01000000" >
+      <core_property
+         ro.vendor.oplus.operator="CELCOM"
+         ro.vendor.oplus.regionmark="MY"
+       />
+      <main_property
+         persist.sys.oppo.region="MY"
+       />
+</base_config>
+
+<base_config name="Malaysia MAXIS" nv="01000001" >
+      <core_property
+         ro.vendor.oplus.operator="MAXIS"
+         ro.vendor.oplus.regionmark="MY"
+       />
+      <main_property
+         persist.sys.oppo.region="MY"
+       />
+</base_config>
+
+<base_config name="Malaysia DIGI" nv="01000010" >
+      <core_property
+         ro.vendor.oplus.operator="DIGI"
+         ro.vendor.oplus.regionmark="MY"
+       />
+      <main_property
+         persist.sys.oppo.region="MY"
+       />
+</base_config>
+
+<base_config name="Europe EUEX" nv="01000100" >
+     <core_property
+         ro.vendor.oplus.regionmark="EUEX"
+      />
+</base_config>
+
+<base_config name="Thailand DTAC" nv="01000101" >
+      <core_property
+         ro.vendor.oplus.operator.device.lock="DTAC"
+         ro.vendor.oplus.regionmark="TH"
+       />
+</base_config>
+
+<base_config name="Spain MOVISTAR" nv="01000110" >
+      <core_property
+         ro.vendor.oplus.operator="MOVISTAR"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="ES"
+       />
+      <main_property
+         persist.sys.oppo.region="ES"
+       />
+</base_config>
+
+<base_config name="Australia TELSTRA_PREPAID" nv="01000111" >
+      <core_property
+         ro.vendor.oplus.operator="TELSTRA_PREPAID"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia VODAFONE_PREPAID" nv="01001000" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_PREPAID"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia VIRGIN_PREPAID" nv="01001001" >
+      <core_property
+         ro.vendor.oplus.operator="VIRGIN_PREPAID"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="France ORANGE" nv="01001010" >
+      <core_property
+         ro.vendor.oplus.operator="ORANGE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="FR"
+       />
+      <main_property
+         persist.sys.oppo.region="FR"
+       />
+</base_config>
+
+<base_config name="Australia OPTUS_PREPAID" nv="01001011" >
+      <core_property
+         ro.vendor.oplus.operator="OPTUS_PREPAID"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia TELSTRA_POSTPAID" nv="01001100" >
+      <core_property
+         ro.vendor.oplus.operator="TELSTRA_POSTPAID"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia VODAFONE_POSTPAID" nv="01001101" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_POSTPAID"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia VIRGIN_POSTPAID" nv="01001110" >
+      <core_property
+         ro.vendor.oplus.operator="VIRGIN_POSTPAID"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Australia OPTUS_POSTPAID" nv="01001111" >
+      <core_property
+         ro.vendor.oplus.operator="OPTUS_POSTPAID"
+         ro.vendor.oplus.regionmark="AU"
+       />
+      <main_property
+         persist.sys.oppo.region="AU"
+       />
+</base_config>
+
+<base_config name="Italy VODAFONE_EUEX" nv="01010000" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_EUEX"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="IT"
+       />
+      <main_property
+         persist.sys.oppo.region="IT"
+       />
+</base_config>
+
+<base_config name="Turkey" nv="01010001" >
+      <core_property
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="TR"
+       />
+</base_config>
+
+<base_config name="Netherlands VODAFONE_EUEX" nv="01010010" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_EUEX"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="NL"
+       />
+      <main_property
+         persist.sys.oppo.region="NL"
+       />
+</base_config>
+
+<base_config name="Europe VODAFONE_EUEX" nv="01010011" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_EUEX"
+         ro.vendor.oplus.regionmark="EUEX"
+       />
+</base_config>
+
+<base_config name="Japan UQMOBILE" nv="01010100" >
+      <core_property
+         ro.vendor.oplus.operator="UQMOBILE"
+         ro.vendor.oplus.regionmark="JP"
+       />
+      <main_property
+         persist.sys.oppo.region="JP"
+       />
+</base_config>
+
+<base_config name="Bangladesh" nv="01010101" >
+      <core_property
+         ro.vendor.oplus.regionmark="BD"
+       />
+</base_config>
+
+<base_config name="Pakistan" nv="01010110" >
+      <core_property
+         ro.vendor.oplus.regionmark="PK"
+       />
+</base_config>
+
+<base_config name="Europe ORANGE" nv="01010111" >
+      <core_property
+         ro.vendor.oplus.operator="ORANGE"
+         ro.vendor.oplus.regionmark="EUEX"
+       />
+</base_config>
+
+<base_config name="Poland ORANGE" nv="01011000" >
+      <core_property
+         ro.vendor.oplus.operator="ORANGE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="PL"
+       />
+      <main_property
+         persist.sys.oppo.region="PL"
+       />
+</base_config>
+
+<base_config name="Nigeria" nv="01011001" >
+      <core_property
+         ro.vendor.oplus.regionmark="NG"
+       />
+</base_config>
+
+<base_config name="Kazakhstan" nv="01011010" >
+      <core_property
+         ro.vendor.oplus.regionmark="KZ"
+       />
+</base_config>
+
+<base_config name="GB VODAFONE_EUEX" nv="01011011" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_EUEX"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="GB"
+       />
+      <main_property
+         persist.sys.oppo.region="GB"
+       />
+</base_config>
+
+<base_config name="Spain VODAFONE_EUEX" nv="01011100" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_EUEX"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="ES"
+       />
+      <main_property
+         persist.sys.oppo.region="ES"
+       />
+</base_config>
+
+<base_config name="Germany VODAFONE_EUEX" nv="01011101" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_EUEX"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="DE"
+       />
+      <main_property
+         persist.sys.oppo.region="DE"
+       />
+</base_config>
+
+<base_config name="GB EE" nv="01011110" >
+      <core_property
+         ro.vendor.oplus.operator="EE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="GB"
+         ro.vendor.oppo.version_suffix="EE"
+       />
+      <main_property
+         persist.sys.oppo.region="GB"
+       />
+</base_config>
+
+<base_config name="Switzerland SWISSCOM" nv="01011111" >
+      <core_property
+         ro.vendor.oplus.operator="SWISSCOM"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="CH"
+         ro.oem.key1="SWISSCOM"
+       />
+      <main_property
+         persist.sys.oppo.region="CH"
+       />
+</base_config>
+
+<base_config name="Sri Lanka" nv="01100000" >
+      <core_property
+         ro.vendor.oplus.regionmark="LK"
+       />
+</base_config>
+
+<base_config name="Nepal" nv="01100001" >
+      <core_property
+         ro.vendor.oplus.regionmark="NP"
+       />
+</base_config>
+
+<base_config name="United Arab Emirates" nv="01100010" >
+      <core_property
+         ro.vendor.oplus.regionmark="AE"
+       />
+</base_config>
+
+<base_config name="Morocco" nv="01100011" >
+      <core_property
+         ro.vendor.oplus.regionmark="MA"
+       />
+</base_config>
+
+<base_config name="Tunisia" nv="01100100" >
+      <core_property
+         ro.vendor.oplus.regionmark="TN"
+       />
+</base_config>
+
+<base_config name="Spain ORANGE" nv="01100101" >
+      <core_property
+         ro.vendor.oplus.operator="ORANGE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="ES"
+       />
+      <main_property
+         persist.sys.oppo.region="ES"
+       />
+</base_config>
+
+<base_config name="Spain TELEFONIA" nv="01100110" >
+      <core_property
+         ro.vendor.oplus.operator="TELEFONIA"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="ES"
+       />
+      <main_property
+         persist.sys.oppo.region="ES"
+       />
+</base_config>
+
+<base_config name="France BOUYGUE" nv="01100111" >
+      <core_property
+         ro.vendor.oplus.operator="BOUYGUE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="FR"
+       />
+      <main_property
+         persist.sys.oppo.region="FR"
+       />
+</base_config>
+
+<base_config name="Netherlands TMOBILE" nv="01101000" >
+      <core_property
+         ro.vendor.oplus.operator="TMOBILE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="NL"
+       />
+      <main_property
+         persist.sys.oppo.region="NL"
+       />
+</base_config>
+
+<base_config name="Turkey TURKCELL" nv="01101001" >
+      <core_property
+         ro.vendor.oplus.operator="TURKCELL"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="TR"
+       />
+      <main_property
+         persist.sys.oppo.region="TR"
+       />
+</base_config>
+
+<base_config name="Turkey VODAFONE_EUEX" nv="01101010" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_EUEX"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="TR"
+         ro.vendor.oppo.version_suffix="null"
+       />
+      <main_property
+         persist.sys.oppo.region="TR"
+       />
+</base_config>
+
+<base_config name="Italy TIM" nv="01101011" >
+      <core_property
+         ro.vendor.oplus.operator="TIM"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="IT"
+       />
+      <main_property
+         persist.sys.oppo.region="IT"
+       />
+</base_config>
+
+<base_config name="Japan RAKUTEN" nv="01101100" >
+      <core_property
+         ro.vendor.oplus.operator="RAKUTEN"
+         ro.vendor.oplus.regionmark="JP"
+       />
+      <main_property
+         persist.sys.oppo.region="JP"
+       />
+</base_config>
+
+<base_config name="France ORANGE_LITE" nv="01101101" >
+      <core_property
+         ro.vendor.oplus.operator="ORANGE_LITE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="FR"
+       />
+      <main_property
+         persist.sys.oppo.region="FR"
+       />
+</base_config>
+
+<base_config name="Singapore TPG" nv="01101110" >
+      <core_property
+         ro.vendor.oplus.operator="TPG"
+         ro.vendor.oplus.regionmark="SG"
+       />
+      <main_property
+         persist.sys.oppo.region="SG"
+       />
+</base_config>
+
+<base_config name="Singapore MyRepublic" nv="01101111" >
+      <core_property
+         ro.vendor.oplus.operator="MyRepublic"
+         ro.vendor.oplus.regionmark="SG"
+       />
+      <main_property
+         persist.sys.oppo.region="SG"
+       />
+</base_config>
+
+<base_config name="Spain MOVISTAR_LITE" nv="01110000" >
+      <core_property
+         ro.vendor.oplus.operator="MOVISTAR_LITE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="ES"
+         ro.appsflyer.preinstall.path="/data/etc/appchannel/pre_install_onmo.appsflyer"
+       />
+      <main_property
+         persist.sys.oppo.region="ES"
+       />
+</base_config>
+
+<base_config name="Italy TIM_LITE" nv="01110001" >
+      <core_property
+         ro.vendor.oplus.operator="TIM_LITE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="IT"
+       />
+      <main_property
+         persist.sys.oppo.region="IT"
+       />
+</base_config>
+
+<base_config name="Poland PLAY" nv="01110010" >
+      <core_property
+         ro.vendor.oplus.operator="PLAY"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="PL"
+       />
+      <main_property
+         persist.sys.oppo.region="PL"
+       />
+</base_config>
+
+<base_config name="Kenya" nv="01110100" >
+      <core_property
+         ro.vendor.oplus.regionmark="KE"
+       />
+</base_config>
+
+<base_config name="Japan OCN" nv="01110110" >
+      <core_property
+         ro.vendor.oplus.operator="OCN"
+         ro.vendor.oplus.regionmark="JP"
+         ro.oem.key1="OCN"
+       />
+      <main_property
+         persist.sys.oppo.region="JP"
+       />
+</base_config>
+
+<base_config name="IT WIND3" nv="01110111" >
+      <core_property
+         ro.vendor.oplus.operator="WIND3"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="IT"
+         ro.oem.key1="WIND3"
+       />
+      <main_property
+         persist.sys.oppo.region="IT"
+       />
+</base_config>
+
+
+<base_config name="Egypt" nv="01110101" >
+      <core_property
+         ro.vendor.oplus.regionmark="EG"
+       />
+</base_config>
+
+<base_config name="GB O2" nv="01110011" >
+      <core_property
+         ro.vendor.oplus.operator="O2"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="GB"
+         ro.oem.key1="O2"
+         ro.vendor.oppo.version_suffix="O2"
+       />
+      <main_property
+         persist.sys.oppo.region="GB"
+       />
+</base_config>
+
+<base_config name="VODAFONE_EEA" nv="01111101" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_EEA"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.oem.key1="VODAFONE"
+         ro.vendor.oppo.version_suffix="VF"
+       />
+</base_config>
+
+<base_config name="New Zealand WAREHOUSE" nv="01111000" >
+      <core_property
+         ro.vendor.oplus.operator="WAREHOUSE"
+         ro.vendor.oplus.regionmark="NZ"
+       />
+      <main_property
+         persist.sys.oppo.region="NZ"
+       />
+</base_config>
+
+<base_config name="New Zealand SKINNY" nv="01111001" >
+      <core_property
+         ro.vendor.oplus.operator="SKINNY"
+         ro.vendor.oplus.regionmark="NZ"
+       />
+      <main_property
+         persist.sys.oppo.region="NZ"
+       />
+</base_config>
+
+<base_config name="Mexico TELCEL" nv="01111010" >
+      <core_property
+         ro.vendor.oplus.operator="TELCEL"
+         ro.vendor.oplus.regionmark="MX"
+       />
+      <main_property
+         persist.sys.oppo.region="MX"
+         persist.sys.forbiduninstall.packagelist = "com.celltick.lockscreen,com.facebook.katana"
+       />
+</base_config>
+
+<base_config name="Mexico" nv="01111011" >
+      <core_property
+         ro.vendor.oplus.regionmark="MX"
+       />
+</base_config>
+
+<base_config name="Philippines Smart Retailer" nv="01111100" >
+      <core_property
+         ro.vendor.oplus.operator="SMART_RETAILER"
+         ro.vendor.oplus.regionmark="PH"
+       />
+      <main_property
+         persist.sys.oppo.region="PH"
+       />
+</base_config>
+
+<base_config name="VODAFONE_NONEEA" nv="01111110" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_NONEEA"
+         ro.vendor.oppo.version_suffix="VF"
+         ro.vendor.oppo.non.eea="NONEEA"
+       />
+</base_config>
+
+<base_config name="Hong Kong" nv="10000010" >
+      <core_property
+         ro.vendor.oplus.regionmark="HK"
+       />
+</base_config>
+
+<base_config name="Saudi Arabia" nv="10000011" >
+      <core_property
+         ro.vendor.oplus.regionmark="SA"
+       />
+</base_config>
+
+<base_config name="New Zealand VODAFONE" nv="10000100" >
+      <core_property
+         ro.vendor.oplus.operator="VODAFONE_NZ"
+         ro.vendor.oplus.regionmark="NZ"
+       />
+      <main_property
+         persist.sys.oppo.region="NZ"
+       />
+</base_config>
+
+<base_config name="Europe Non EEA" nv="10000101" >
+     <core_property
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oppo.non.eea="NONEEA"
+      />
+</base_config>
+
+<base_config name="France Altice" nv="10000110" >
+     <core_property
+         ro.vendor.oplus.operator="ALTICE"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="FR"
+      />
+      <main_property
+         persist.sys.oppo.region="FR"
+       />
+</base_config>
+
+
+<base_config name="Ukraine UA" nv="10000111" >
+     <core_property
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="UA"
+         ro.vendor.oppo.non.eea="NONEEA"
+      />
+</base_config>
+
+<base_config name="DE O2" nv="10001000" >
+      <core_property
+         ro.vendor.oplus.operator="O2"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="DE"
+         ro.vendor.oppo.version_suffix="O2"
+       />
+      <main_property
+         persist.sys.oppo.region="DE"
+       />
+</base_config>
+
+<base_config name="Japan KDDI" nv="10001001" >
+      <core_property
+         ro.vendor.oplus.operator="KDDI"
+         ro.vendor.oplus.regionmark="JP"
+       />
+      <main_property
+         persist.sys.oppo.region="JP"
+       />
+</base_config>
+
+<base_config name="GB CPW" nv="10001010" >
+      <core_property
+         ro.vendor.oplus.operator="CPW"
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="GB"
+         ro.vendor.oppo.version_suffix="CPW"
+       />
+      <main_property
+         persist.sys.oppo.region="GB"
+       />
+</base_config>
+
+<base_config name="Japan YMOBILE" nv="10001011" >
+      <core_property
+         ro.vendor.oplus.operator="YMOBILE"
+         ro.vendor.oplus.regionmark="JP"
+       />
+      <main_property
+         persist.sys.oppo.region="JP"
+       />
+</base_config>
+
+<base_config name="Europe EUEX Dual Sim" nv="10001100" >
+     <core_property
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oppo.dualsim.eea="EEA"
+      />
+</base_config>
+
+<base_config name="Europe Noneea Dual Sim" nv="10001101" >
+     <core_property
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oppo.non.eea="NONEEA"
+      />
+</base_config>
+
+<base_config name="Mexico ATT" nv="10001110" >
+      <core_property
+         ro.vendor.oplus.operator="ATT"
+         ro.vendor.oplus.regionmark="MX"
+       />
+      <main_property
+         persist.sys.oppo.region="MX"
+       />
+</base_config>
+
+<base_config name="Romania" nv="10001111" >
+      <core_property
+         ro.vendor.oplus.regionmark="EUEX"
+         ro.vendor.oplus.euex.country="RO"
+       />
+</base_config>
+
+<command_config name="wifi默认关闭需求" operator="NZOP,SPARK" >
+      <main_property
+         ro.setupwizard.wifi_on_exit="false"
+       />
+</command_config>
+
+<!-- clientidbase相关配置开始 -->
+<!-- 配置要点：配置运营商的clientid的时候，要同时配置在公开版中过滤掉该运营商 -->
+<command_config name="OPUTS clientidbase" operator="OPTUS,OPTUS_PREPAID,OPTUS_POSTPAID" >
+      <core_property
+         ro.com.google.clientidbase.ms="android-optus-au-revc"
+         ro.com.google.clientidbase.am="android-optus-au"
+      />
+</command_config>
+
+<command_config name="Windtre clientidbase" operator="WIND3">
+      <core_property
+          ro.com.google.clientidbase.ms="android-h3g-{country}-revc"
+      />
+</command_config>
+
+<command_config name="TELSTRA clientidbase" operator="TELSTRA,TELSTRA_PREPAID,TELSTRA_POSTPAID" >
+      <core_property
+         ro.com.google.clientidbase.ms="android-telstra-au-revc"
+         ro.com.google.clientidbase.am="android-telstra-au"
+         ro.com.google.clientidbase.wal="android-telstra-au"
+      />
+</command_config>
+
+<command_config name="VODAFONE clientidbase" operator="VODAFONE,VODAFONE_POSTPAID,VODAFONE_PREPAID" >
+      <core_property
+         ro.com.google.clientidbase.ms="android-vf-au-revc"
+      />
+</command_config>
+
+<command_config name="GB EE clientidbase" operator="EE" >
+      <core_property
+         ro.com.google.clientidbase.ms="android-ee-uk-revc"
+      />
+</command_config>
+
+<command_config name="VODAFONE_EUEX clientidbase" operator="VODAFONE_EUEX,VODAFONE_EEA,VODAFONE_NONEEA" >
+      <core_property
+         ro.com.google.clientidbase.ms="android-vf-{country}-revc"
+      />
+</command_config>
+
+<command_config name="ORANGE clientidbase" operator="ORANGE,ORANGE_LITE" >
+      <core_property
+         ro.com.google.clientidbase.ms="android-orange-{country}-revc"
+      />
+</command_config>
+
+<command_config name="BOUYGUE clientidbase" operator="BOUYGUE">
+      <core_property
+          ro.com.google.clientidbase.ms="android-bouygues-fr-revc"
+      />
+</command_config>
+
+<command_config name="TIM clientidbase" operator="TIM">
+      <core_property
+          ro.com.google.clientidbase.ms="android-tim-it-revc"
+      />
+</command_config>
+
+<command_config name="TELCEL clientidbase" operator="TELCEL">
+      <core_property
+          ro.com.google.clientidbase.ms="android-americamovil-{country}-revc"
+          ro.com.google.clientidbase.am="android-americamovil-{country}"
+      />
+</command_config>
+
+<command_config name="KDDI clientidbase" operator="KDDI">
+      <core_property
+          ro.com.google.clientidbase.ms="android-kddi-jp-revc"
+          ro.com.google.clientidbase.am="android-kddi-jp"
+      />
+</command_config>
+
+<command_config name="O2 clientidbase" operator="O2,MOVISTAR,MOVISTAR_LITE">
+      <core_property
+          ro.com.google.clientidbase.ms="android-tef-{country}-revc"
+      />
+</command_config>
+
+<command_config name="ATT clientidbase" operator="ATT">
+      <core_property
+          ro.com.google.clientidbase.ms="android-attmexico-mx-revc"
+      />
+</command_config>
+
+<command_config name="非定制版 clientidbase.ms" regionmark="-RU" operator="-OPTUS,-OPTUS_PREPAID,-OPTUS_POSTPAID,-TELSTRA,-TELSTRA_PREPAID,-TELSTRA_POSTPAID,-VODAFONE,-VODAFONE_POSTPAID,-VODAFONE_PREPAID,-EE,-VODAFONE_EUEX,-ORANGE,-ORANGE_LITE,-VODAFONE_EEA,-WIND3,-VODAFONE_NONEEA,-TELCEL,-MOVISTAR_LITE,-MOVISTAR,-KDDI,-O2,-ATT,-SOFTBANK,-YMOBILE" >
+      <core_property
+         ro.com.google.clientidbase.ms="android-oppo-rev1"
+      />
+</command_config>
+
+<command_config name="chrome不在dock栏 clientidbase.cr" regionmark="IN,ID,VN,TH">
+      <core_property
+         ro.com.google.clientidbase.cr="android-oppo"
+      />
+</command_config>
+
+<command_config name="chrome不在dock栏 clientidbase.cr" operator="EE,VODAFONE_EUEX,ORANGE,ORANGE_LITE,BOUYGUE">
+      <core_property
+         ro.com.google.clientidbase.cr="android-oppo"
+      />
+</command_config>
+
+<command_config name="SOFTBANK clientidbase" operator="SOFTBANK" >
+      <core_property
+         ro.com.google.clientidbase.am="android-softbank-jp"
+      />
+</command_config>
+
+<!-- clientidbase相关配置结束 -->
+
+<command_config name="ORANGE branch1"  operator="ORANGE,ORANGE_LITE" >
+      <core_property
+         ro.product.brand1="Orange"
+      />
+</command_config>
+
+</self_init_config>

@@ -1,0 +1,6 @@
+service atlasservice /system_ext/bin/atlasservice
+    class main
+    user root
+    group root graphics drmrpc audio media readproc sdcard_rw
+    capabilities SYS_NICE
+

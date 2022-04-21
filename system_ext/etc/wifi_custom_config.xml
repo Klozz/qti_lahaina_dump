@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<WifiCustomConfig version="2020062100">
+
+<Default>
+<!-- ****** CUSTOM ITEMS ****** -->
+<!-- Custom name, same with the parent tag. -->
+<config_wifi_custom_config_name disabled="1">Sample</config_wifi_custom_config_name>
+
+<!-- ****** STA INITIAL CONFIGURATION ****** -->
+<!-- Flag indicating whether wifi STA should be banned. (0 as default)-->
+<config_wifi_sta_forbidden disabled="1">0</config_wifi_sta_forbidden>
+
+<!-- ****** SOFTAP INITIAL CONFIGURATION ****** -->
+<!-- Flag indicating whether wifi SAP should be banned. (0 as default)-->
+<config_wifi_sap_forbidden disabled="1">0</config_wifi_sap_forbidden>
+<!-- Array indicating wifi softap ssid catelog. (0 as default)
+        0-Read from defconfig,
+        1-Read from MAC,
+        2-Random numbers,
+        3-Random letters,
+        4-Read from Device manufacturer and model number/name,
+        5-Read from Device manufacturer and product number/name,
+        6-"_",
+        7-"-",
+        8-" ",
+        9-IMEI,
+        a-ESN,
+        b-MDN,
+        c-Random numbers and letters,
+        d-Read from OPPO market name,
+        e-Read from property-->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_ssid isCatalog="1" disabled="0"
+        defconfig="OPPO"
+        macbits="4"
+        macuppercase="1"
+        randomlengthForNumbers="8"
+        randomlengthForLetters="8"
+        randomlengthForNumbersAndLetters="8"
+        imeilength="15"
+        esnlength="4"
+        mdnlength="10"
+        propertyName="ro.oppo.market.name">
+<entry>d</entry>
+</config_wifi_sap_ssid>
+<!-- Configuration of wifi softap key management: 0-NONE, 1-WPA2_PSK, 2-WPA3_SAE_TRANSITION, 3-WPA3_SAE, 4-WPA2_PSK(for compatibility). (1 as default)-->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_keymgmt disabled="0">1</config_wifi_sap_keymgmt>
+<!-- Array indicating wifi softap psk catelog. (1 as default)
+        0-Read from defconfig,
+        1-Read from MAC,
+        2-Random numbers,
+        3-Random letters,
+        4-Read from Device manufacturer and model number/name,
+        5-Read from Device manufacturer and product number/name,
+        6-"_",
+        7-"-",
+        8-" ",
+        9-IMEI,
+        a-ESN,
+        b-MDN,
+        c-Random numbers and letters,
+        d-Read from OPPO market name,
+        e-Read from property-->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_psk isCatalog="1" disabled="0"
+        defconfig="12345678"
+        macbits="4"
+        macuppercase="1"
+        randomlengthForNumbers="8"
+        randomlengthForLetters="8"
+        randomlengthForNumbersAndLetters="8"
+        imeilength="15"
+        esnlength="4"
+        mdnlength="10"
+        propertyName="ro.oppo.market.name">
+<entry>c</entry>
+</config_wifi_sap_psk>
+<!-- Configuration of whether to hide wifi softAp SSID. 0-not hide, 1-hide. (0 as default)-->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_hidden disabled="0">0</config_wifi_sap_hidden>
+<!-- Configuration of the channel number that wifi softap uses. (0 as default)-->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_channel disabled="0">0</config_wifi_sap_channel>
+<!-- Configuration of the band that wifi softap uses. 0-2GHZ, 1-5GHZ, 2-DUAL, 3-60GHz. (0 as default)-->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_band disabled="0">0</config_wifi_sap_band>
+<!-- Configuration of max clients that softap can support. (10 as default)-->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_max_clients disabled="0">10</config_wifi_sap_max_clients>
+<!-- Flag indicating client need to authorize by user when client is connecting to AP. 0-disable, 1-enable. (0 as default) -->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_client_control_by_user disabled="0">0</config_wifi_sap_client_control_by_user>
+<!-- Configuration of black list. MUST wrapped with ""!!! ("" as default, Multiple MAC addresses are separated by a SPACE separator. e.g. "48:28:2f:c5:9b:b3 20:64:32:60:f0:25") -->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_blocked_client_list disabled="0">""</config_wifi_sap_blocked_client_list>
+<!-- Configuration of white list. MUST wrapped with ""!!! ("" as default, Multiple MAC addresses are separated by a SPACE separator. e.g. "48:28:2f:c5:9b:b3 20:64:32:60:f0:25") -->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_allowed_client_list disabled="0">""</config_wifi_sap_allowed_client_list>
+<!-- Flag indicating whether power mode(auto shutdown) is enabled. (1 as default)-->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_power_mode_enabled disabled="0">1</config_wifi_sap_power_mode_enabled>
+<!-- Configuration of power mode time in minutes. (0-"use Android default timeout" as default)-->
+<!-- IMPORTANT: This item is mandatory for Android R SoftApConfiguration-->
+<config_wifi_sap_power_mode disabled="0">0</config_wifi_sap_power_mode>
+<!-- Flag indicating power mode notification. 0-no notification, 1-have notification. (0 as default)-->
+<config_wifi_sap_power_mode_notification disabled="1">0</config_wifi_sap_power_mode_notification>
+<!-- Flag indicating whether SoftAP max assoc notification enabled. 0-disable, 1-enable. (0 as default)-->
+<config_wifi_sap_max_assoc_notification_enabled disabled="1">0</config_wifi_sap_max_assoc_notification_enabled>
+<!-- Flag indicating whether dhcp is enabled. 0-no dhcp server, 1-use dhcp server. (1 as default)-->
+<config_wifi_sap_dhcp_enable disabled="1">1</config_wifi_sap_dhcp_enable>
+<!-- Configuration of AP IP lease time. ("3600" as default)-->
+<config_wifi_sap_dhcp_leasetime disabled="1">3600</config_wifi_sap_dhcp_leasetime>
+<!-- Configuration of AP IP address. ("192.168.1.1" as default)-->
+<config_wifi_sap_dhcp_ip disabled="1">192.168.1.1</config_wifi_sap_dhcp_ip>
+<!-- Configuration of AP netmask. ("255.255.255.0" as default)-->
+<config_wifi_sap_dhcp_netmask disabled="1">255.255.255.0</config_wifi_sap_dhcp_netmask>
+<!-- Configuration of AP start IP. ("192.168.1.100" as default)-->
+<config_wifi_sap_dhcp_ip_start disabled="1">192.168.1.100</config_wifi_sap_dhcp_ip_start>
+<!-- Configuration of AP end IP. ("192.168.1.254" as default)-->
+<config_wifi_sap_dhcp_ip_end disabled="1">192.168.1.254</config_wifi_sap_dhcp_ip_end>
+<!-- Configuration of hotspot 802.11 network PHY standard. bgn-b/g/n, g-g only, bg-b/g, a-a/n/ac. (bgn as default)-->
+<config_wifi_sap_hw_mode disabled="1">bgn</config_wifi_sap_hw_mode>
+
+<!-- ****** P2P INITIAL CONFIGURATION ****** -->
+<!-- Array indicating wifi p2p device name catelog. (0 as default)
+        0-Read from defconfig,
+        1-Read from MAC,
+        2-Random numbers,
+        3-Random letters,
+        4-Read from Device manufacturer and model number/name,
+        5-Read from Device manufacturer and product number/name,
+        6-"_",
+        7-"-",
+        8-" ",
+        9-IMEI,
+        a-ESN,
+        b-MDN,
+        c-Random numbers and letters,
+        d-Read from OPPO market name,
+        e-Read from property-->
+<config_wifi_p2p_device_name isCatalog="1" disabled="1"
+        settingsGlobal="wifi_p2p_device_name"
+        defconfig="OPPO"
+        macbits="4"
+        macuppercase="1"
+        randomlengthForNumbers="8"
+        randomlengthForLetters="8"
+        randomlengthForNumbersAndLetters="8"
+        imeilength="15"
+        esnlength="4"
+        mdnlength="10"
+        propertyName="ro.oppo.market.name">
+<entry>0</entry>
+</config_wifi_p2p_device_name>
+
+<!-- ****** WIFI SHARING INITIAL CONFIGURATION ****** -->
+<!-- Flag indicating whether wifi SAP should be banned. (0 as default)-->
+<config_wifi_ssap_forbidden disabled="1">0</config_wifi_ssap_forbidden>
+<!-- Array indicating wifi sharing softap ssid catelog. (0 as default)
+        0-Read from defconfig,
+        1-Read from MAC,
+        2-Random numbers,
+        3-Random letters,
+        4-Read from Device manufacturer and model number/name,
+        5-Read from Device manufacturer and product number/name,
+        6-"_",
+        7-"-",
+        8-" ",
+        9-IMEI,
+        a-ESN,
+        b-MDN,
+        c-Random numbers and letters,
+        d-Read from OPPO market name,
+        e-Read from property-->
+<config_wifi_ssap_ssid isCatalog="1" disabled="1"
+        defconfig="OPPO"
+        macbits="4"
+        macuppercase="1"
+        randomlengthForNumbers="8"
+        randomlengthForLetters="8"
+        randomlengthForNumbersAndLetters="8"
+        imeilength="15"
+        esnlength="4"
+        mdnlength="10"
+        propertyName="ro.oppo.market.name">
+<entry>0</entry>
+</config_wifi_ssap_ssid>
+<!-- Configuration of wifi sharing softap key management: 0-NONE, 1-WPA_PSK, 2-WPA_EAP, 3-IEEE8021X, 4-WPA2_PSK. (4 as default)-->
+<config_wifi_ssap_keymgmt disabled="1">4</config_wifi_ssap_keymgmt>
+<!-- Array indicating wifi sharing softap psk catelog. (1 as default)
+        0-Read from defconfig,
+        1-Read from MAC,
+        2-Random numbers,
+        3-Random letters,
+        4-Read from Device manufacturer and model number/name,
+        5-Read from Device manufacturer and product number/name,
+        6-"_",
+        7-"-",
+        8-" ",
+        9-IMEI,
+        a-ESN,
+        b-MDN,
+        c-Random numbers and letters,
+        d-Read from OPPO market name,
+        e-Read from property-->
+<config_wifi_ssap_psk isCatalog="1" disabled="1"
+        defconfig="12345678"
+        macbits="4"
+        macuppercase="1"
+        randomlengthForNumbers="8"
+        randomlengthForLetters="8"
+        randomlengthForNumbersAndLetters="8"
+        imeilength="15"
+        esnlength="4"
+        mdnlength="10"
+        propertyName="ro.oppo.market.name">
+<entry>2</entry>
+</config_wifi_ssap_psk>
+<!-- Configuration of whether to hide sharing softAp SSID. 0-not hide, 1-hide. (0 as default)-->
+<config_wifi_ssap_hidden disabled="1">0</config_wifi_ssap_hidden>
+<!-- Configuration of the channel number that wifi sharing softap uses. (0 as default)-->
+<config_wifi_ssap_channel disabled="1">0</config_wifi_ssap_channel>
+<!-- Configuration of the band that wifi sharing softap uses. 0-2GHZ, 1-5GHZ, 2-DUAL, 3-60GHz. (0 as default)-->
+<config_wifi_ssap_band disabled="1">0</config_wifi_ssap_band>
+
+</Default>
+
+</WifiCustomConfig>

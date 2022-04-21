@@ -1,0 +1,24 @@
+user=radio seinfo=platform name=.dataservices domain=vendor_dataservice_app type=radio_data_file
+user=_app seinfo=platform name=com.qualcomm.telephony domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=org.codeaurora.ims isPrivApp=true domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.devicestatisticsservice domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.location.XT isPrivApp=true domain=vendor_location_app type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.location.XT.setup isPrivApp=true domain=vendor_location_app type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.location isPrivApp=true domain=vendor_location_app type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.wfd.service:wfd_service domain=vendor_wfd_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.wfd.client domain=vendor_wfd_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.ssmeditor domain=vendor_qconfig_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.qualcomm.qti.qdma isPrivApp=true domain=vendor_qcc_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.qcclmtp isPrivApp=true domain=vendor_qcc_lmtp_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.qdmautils isPrivApp=true domain=vendor_qcc_utils_app type=system_app_data_file
+user=_app seinfo=platform name=com.caf.fmradio domain=vendor_fm_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.seccamservice:remote domain=vendor_seccam_app type=app_data_file
+user=smartcard domain=platform_app type=app_data_file
+user=spi domain=platform_app type=app_data_file
+user=_app seinfo=oppo_theme domain=oppotheme_app type=app_data_file levelFrom=user
+user=system seinfo=platform name=com.audience.voiceqmultikeyword* type=oppo_smartmic_data_file
+user=_app seinfo=oppo_data_app_std name=com.coloros.backuprestore domain=oppo_backuprestore_app type=app_data_file
+user=_app seinfo=oppo_backuprestore domain=oppo_backuprestore_app type=app_data_file
+user=_app seinfo=oppo_data_app_std name=com.oppo.camera domain=oppocamera_app type=app_data_file
+user=system seinfo=engineermode domain=engineermode_app type=system_app_data_file
+user=system seinfo=platform name=com.coloros.exsystemservice domain=color_system_service_app type=system_app_data_file
